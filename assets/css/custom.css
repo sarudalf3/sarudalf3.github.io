@@ -4,3 +4,8 @@ Just customize your theme here.
 ================================================== */
 
 body {}
+
+img[alt=blog_init] {
+   height:550px;
+   width: auto
+ }

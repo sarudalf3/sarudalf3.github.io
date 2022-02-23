@@ -15,12 +15,35 @@ Antes de todo, ¿Que es Github?
 
 GitHub es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git. Se utiliza principalmente para la creación de código fuente de programas informáticos. Ha tenido bastante aceptación por desarrolladores, y en el año 2018, Microsoft adquirió el sitio.
 
-Si no tienes una cuenta, create una en el sitio de [GitHub](https://github.com/).
+Si no tienes una cuenta, create una en el sitio de [GitHub](https://github.com/), es gratis.
 
 Empecemos!
 
 1. Si estás en el ambiente de windows, es necesario que instales Ubuntu. Para ello primero debes asegurarte que tu equipo tenga las caracteristicas necesarias para instalar Ubuntu.
 
-    1.1 Ir a Settings > System > About!
-    
-    ![img](affiliates-jekyll-theme/assets/images/jekyll/01.jpg)
+    1.1 Ir a Settings > System > About 
+    ![](/assets/images/jekyll/01.jpg){height="300" width="auto"}
+    ![blog_init](/assets/images/jekyll/01.jpg)
+
+    Debes tener un sistema de 64 bits y una OS mayor a 14393 (ver las actualizaciones de Windows).
+
+    1.2 Ir a Settings > Update & Security > For developers
+    ![](/assets/images/jekyll/02.jpg){height="300" width="auto"}
+
+    Aqui debes activar el modo de desarrollador.
+
+    1.3 Ir a activar o desactivar funciones de windows, este opción se activa buscando en el menú de windows 
+    ![](/assets/images/jekyll/03.jpg){height="300" width="auto"}
+
+    A continuaciónEste opción abre una ventana emergente en la que tienes que seleccionar la opción Subsistema de Windows para Linux.
+    [](/assets/images/jekyll/04.jpg){height="300" width="auto"}
+
+    Después de activar esta función, debes reiniciar el equipo. Ya estás en condiciones de instalar Ubuntu.
+
+2. Dirigete a Microsoft Store y busca úna versión de Ubuntu
+[](/assets/images/jekyll/05.jpg){height="300" width="auto"}
+
+3. Después de instalar Ubuntu, tienes que abrir la aplicación. Allí se te pedira un nombre de usuario y una contraseña.
+[](/assets/images/jekyll/06.jpg){height="300" width="auto"}
+
+Ya estamos listos. Ahora tenemos que instalar jekyll, en ambiente de ruby para precargar diseños de paginas web
