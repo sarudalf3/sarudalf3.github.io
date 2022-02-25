@@ -1,13 +1,13 @@
-title: "My humble website"
+title: "sarudalf blog"
 email: ruben.miranda.f@gmail.com
-timezone: UTC
+timezone: america/santiago
 baseurl: ""
 permalink: "/:title/"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-author: Rubén
+author: RMiranda
 paginate: 30
-disqus: 'demowebsite'
+disqus: 'disqus_5QSs1Dy586'
 locale: es_CL
 lang: es_CL
 feed_items: 10
@@ -24,28 +24,23 @@ sass:
 
 # Authors
 authors:
-  sal:
-    name: Sal
-    display_name: Sal
-    avatar: https://github.com/sarudalf3
+  rmirfa:
+    name: Ruben
+    display_name: rmirfa
+    avatar: https://github.com/sarudalf3.png
     email: ruben.miranda.f@gmail.com
-    web: https://www.wowthemes.net/category/jekyll-themes/
-    twitter: https://twitter.com/wowthemesnet
-    description: "mi vida y ya"
-  john:
-    name: John
-    display_name: John
-    avatar: 'assets/images/john.png'
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net/category/jekyll-themes/
-    twitter: https://twitter.com/wowthemesnet
-    description: "This is the author box. Write a short description of the author here. You are currently previewing Affiliates theme demo, a Jekyll template compatible with Github pages."
+    web: https://sarudalf3.github.io/
+    twitter: https://twitter.com/sarudalf
+    description: ""
 
 # Social
 social:
   #instagram: https://www.instagram.com/bootstrapstarter/
   #facebook: https://www.facebook.com/bootstrapstartercom-346329609045284
   twitter: https://twitter.com/sarudalf
+  tumblr: https://www.tumblr.com/blog/sarudalf3
+  linkedin: https://www.linkedin.com/in/rmirandaf
+  github: https://github.com/sarudalf3
 
 # Plugins
 plugins: 

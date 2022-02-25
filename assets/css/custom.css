@@ -3,9 +3,41 @@ Don't want to use sass and simply modify the stylesheet in the old css fashion?
 Just customize your theme here.
 ================================================== */
 
-body {}
+body {
 
-img[alt=blog_init] {
-   height:550px;
-   width: auto
- }
+}
+
+#img_01 {
+  height: 100px;
+  width: 50px;
+}
+
+#img_02 {
+  height:100px;
+  width: 100px;
+}
+ 
+#img_03 {
+  height:200px;
+  width:200px;
+}
+
+#img_04 {
+  height: 200px;
+  width: 600px;
+}
+
+#img_05 {
+  height: 200px;
+  width: 600px;
+}
+
+#img_06 {
+  height: 200px;
+  width: 600px;
+}
+
+#img_07 {
+  height: 200px;
+  width: 600px;
+}
