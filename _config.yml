@@ -1,11 +1,11 @@
-title: "sarudalf blog"
+title: "sarudalf's website"
 email: ruben.miranda.f@gmail.com
 timezone: america/santiago
 baseurl: ""
 permalink: "/:title/"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-author: RMiranda
+author: rmirfa
 paginate: 30
 disqus: 'disqus_5QSs1Dy586'
 locale: es_CL
@@ -26,7 +26,7 @@ sass:
 authors:
   rmirfa:
     name: Ruben
-    display_name: rmirfa
+    display_name: Rubén Miranda.
     avatar: https://github.com/sarudalf3.png
     email: ruben.miranda.f@gmail.com
     web: https://sarudalf3.github.io/
@@ -38,7 +38,7 @@ social:
   #instagram: https://www.instagram.com/bootstrapstarter/
   #facebook: https://www.facebook.com/bootstrapstartercom-346329609045284
   twitter: https://twitter.com/sarudalf
-  tumblr: https://www.tumblr.com/blog/sarudalf3
+  tumblr: https://sarudalf3.tumblr.com/
   linkedin: https://www.linkedin.com/in/rmirandaf
   github: https://github.com/sarudalf3
 

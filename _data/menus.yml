@@ -4,29 +4,31 @@ topmenu:
 - title: Home
   url: ""
 
-- title: About
-  url: "about/"
+- title: Projects
+  #url: "contact/"
+  url: "projects"
 
-- title: Contact
-  url: "contact/"
-
-- title: Get this theme  
-  url: https://bootstrapstarter.com/template-affiliates-bootstrap-jekyll/
+- title: About me  
+  url: about/
   class: "ml-2 btn btn-dark text-white px-3"
-  external: true
+  #external: true
 
 # Footer Menu
 footermenu:
 
-- title: Home
+- title: Blog
   url: ""
 
-- title: Privacy Policy
-  url: "privacy-policy/"
+- title: Projects
+  url: "Projects/"
+
+- title: About Me
+  url: "about/"  
+
+- title: Resume - CV
+  url: https://drive.google.com/file/d/1xLslNc4KeybGKXKlaKoS6cFvLjpWgOzu/view?usp=sharing  
+  external: true
 
 - title: Contact
   url: "contact/"
-
-- title: Download
-  url: https://bootstrapstarter.com/template-affiliates-bootstrap-jekyll/  
-  external: true
+  

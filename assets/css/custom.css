@@ -4,8 +4,27 @@ Just customize your theme here.
 ================================================== */
 
 body {
-
+	/*background: #eee;*/
 }
+
+/*.avatar {
+	border-radius: 50%;
+	display: inline-block;
+	line-height: 0;	
+
+}*/
+
+.avatar {
+  display: inline-block;
+  /*width: 40%;*/
+  border-radius: 50%;
+  line-height: 0;	
+  margin-left: 25%;
+  margin-right: 25%;
+  }
+
+
+.self {border: 3px solid #47a2ff;}
 
 #img_01 {
   height: 100px;
