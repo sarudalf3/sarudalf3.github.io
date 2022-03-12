@@ -2,7 +2,8 @@
 layout: post
 title:  "Como construir tu website en GitHub"
 categories: ['github','jekyll','Ubuntu']
-image: assets/images/jekyll/github_page.jpg
+author: rmirfa
+image: assets/images/posts/jekyll/github_page.jpg
 ---
 Si quieres construir tu propio website y no sabes como, este post te puede ser de ayuda.
 

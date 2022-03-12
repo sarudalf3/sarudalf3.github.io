@@ -6,7 +6,7 @@ permalink: "/about/"
 ---
 
 <div class="avatar self" style="text-align: center;">
-    <img src="/assets/images/about_me.png"  style="height:330px;  width: 330px;"/>
+    <img src="/assets/images/about_me.png"  style="width: 330px;"/>
 </div>
 
 &nbsp; 
@@ -28,6 +28,8 @@ Como estudiante, obtuve una beca para realizar estudios de postgrado. Participé
 En mis étapa de viajero llegué a conocer 15 países, habiendo estado como residente temporal en Canadá y España. Algunos viajes increibles que he realizado es recorrer la gran muralla China; bucear en las costas de Tailandia; ver auroras boreales en el ártico; recorrer ciudades ancentrales como Angkor Wat y Macchu Picchu; practicar rappel en San José de Maipo, sunboarding en el valle de la muerte, kayaking en el parque Canadiense de Banff ó trekking por el circuito W del parque Torres del Paine.
 
 En el período de cuarentena Covid-19 comencé a aprender diversas áreas de data science; mediante una licencia de Coursera realicé cursos de programación en Python; visualización de datos en Power BI y Tableau; modulos de data science, Machine Learning y Deep Learning. Realicé un bootcamp de Full-Stack Python en Coding Dojo en el que aprendí el lenguaje HTML, CSS, Javascript y la librería django de Python; descrubrí como enlazar bases de datos en websites. Este aprendizaje fue el inicio como programador, dónde la habilidad de ágil lector, dominio de inglés y mi profesión contribuyen a construir un sólido perfil como Data Scientist.
+
+El motivo de mi nick es por el señor de Anillos, la amalgama entre los nombres de los magos Saruman y Gandalf es sarudalf.
 
 Te dejo el link de mi cv y un link de contacto para más información.
 

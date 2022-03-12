@@ -5,9 +5,9 @@ baseurl: ""
 permalink: "/:title/"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-author: rmirfa
+author: RMiranda
 paginate: 30
-disqus: 'disqus_5QSs1Dy586'
+#disqus: 'disqus_5QSs1Dy586'
 locale: es_CL
 lang: es_CL
 feed_items: 10
@@ -26,12 +26,13 @@ sass:
 authors:
   rmirfa:
     name: Ruben
-    display_name: Rubén Miranda.
-    avatar: https://github.com/sarudalf3.png
+    display_name: Rubén Miranda
+    avatar: 'assets/images/my_avatar.jpg'
     email: ruben.miranda.f@gmail.com
     web: https://sarudalf3.github.io/
     twitter: https://twitter.com/sarudalf
-    description: ""
+    description: "A curious mind!"
+    github: https://github.com/sarudalf3
 
 # Social
 social:
@@ -41,6 +42,21 @@ social:
   tumblr: https://sarudalf3.tumblr.com/
   linkedin: https://www.linkedin.com/in/rmirandaf
   github: https://github.com/sarudalf3
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: project
+
 
 # Plugins
 plugins: 

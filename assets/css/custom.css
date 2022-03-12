@@ -14,6 +14,10 @@ body {
 
 }*/
 
+.dark-name {
+	color:rgba(0,0,0,1);
+}
+
 .avatar {
   display: inline-block;
   /*width: 40%;*/

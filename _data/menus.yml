@@ -6,7 +6,7 @@ topmenu:
 
 - title: Projects
   #url: "contact/"
-  url: "projects"
+  url: "projects/"
 
 - title: About me  
   url: about/
@@ -20,7 +20,7 @@ footermenu:
   url: ""
 
 - title: Projects
-  url: "Projects/"
+  url: "projects/"
 
 - title: About Me
   url: "about/"  

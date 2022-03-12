@@ -2,7 +2,8 @@
 layout: post
 title:  "Bienvenida"
 #categories: []
-image: assets/images/welcome/01.jpg
+author: rmirfa
+image: assets/images/posts/welcome/01.jpg
 ---
 En este momento de cambios, pandemia y desinformación, he aprendido acerca de lo frágil que puede llegar a ser nuestra sobreviviencia; esto me llevo a empezar un viaje por nuevos conocimientos en Python, Django, Machine Learning, dataViz y programación. 
 
