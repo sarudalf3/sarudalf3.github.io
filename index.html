@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Blog
 layout: default
 ---
 
@@ -7,17 +7,20 @@ layout: default
 ================================================== -->
 {% if page.url == "/" %}
 
-  <div class="rounded mb-5 hero">
+  <div class="rounded mb-5 pb-4 pt-5 hero">
     <div class="row align-items-center justify-content-between">
+      <h1 class="font-weight-bold pt-2 pb-2 mb-3 serif-font">Tips para cientistas de datos</h1>
+
       <div class="col-md-6">
-        <h1 class="font-weight-bold pt-4 pb-4 serif-font">Tips para cientistas de datos</h1>
-        <p class="lead mb-3">Hola, quiero compartir proyectos y artículos que he realizado en área de data science, recibir 
+        <p class="lead mb-4">Hola, quiero compartir proyectos y artículos que he realizado en área de data science, recibir 
           feedback de la comunidad y que tengas información acerca de mí. 
         </p>
-        <a href="{{site.baseurl}}/about" class="btn btn-dark text-white px-5 btn-lg">Acerca de mí</a>
+        <div class="pb-3 pt-1" style="text-align:center">
+          <a href="{{site.baseurl}}/about" class="btn btn-dark text-white px-5 btn-lg mb-4">Acerca de mí</a>
+        </div>  
       </div>
-      <div class="col-md-6 pt-4 text-right pl-0 pl-lg-4">
-        <img class="intro" width="450" src="{{site.baseurl}}/assets/images/intro.png">      
+      <div class="image_center col-md-6 pl-0 pl-lg-4 pb-5"> <!-- pr-lg-4  pl-lg-1"-->
+        <img class="intro" style="width:380px;" src="{{site.baseurl}}/assets/images/intro.png">      
       </div>
     </div>
   </div>

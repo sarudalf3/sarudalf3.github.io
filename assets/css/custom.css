@@ -3,9 +3,9 @@ Don't want to use sass and simply modify the stylesheet in the old css fashion?
 Just customize your theme here.
 ================================================== */
 
-body {
-	/*background: #eee;*/
-}
+/*body {
+	background: #eee;
+}*/
 
 /*.avatar {
 	border-radius: 50%;
@@ -30,37 +30,32 @@ body {
 
 .self {border: 3px solid #47a2ff;}
 
-#img_01 {
-  height: 100px;
-  width: 50px;
+.image_center {
+  display: flex;
+  justify-content: center;
 }
 
-#img_02 {
-  height:100px;
-  width: 100px;
-}
- 
-#img_03 {
-  height:200px;
-  width:200px;
+.console {
+  font-family: Monaco,Consolas,"Lucida Console",monospace;
+  width: 95%;
+  box-sizing: border-box;
+  margin: auto;
 }
 
-#img_04 {
-  height: 200px;
-  width: 600px;
+.console .consolebody {
+  /*border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;*/
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 20px;
+  height: calc(100% - 40px);
+  /*overflow: scroll;*/
+  background-color: #000;
+  color: #eff;
+  font-size: 15px;
+  ;
 }
 
-#img_05 {
-  height: 200px;
-  width: 600px;
-}
-
-#img_06 {
-  height: 200px;
-  width: 600px;
-}
-
-#img_07 {
-  height: 200px;
-  width: 600px;
+.console .consolebody{
+  line-height: 1rem;
 }

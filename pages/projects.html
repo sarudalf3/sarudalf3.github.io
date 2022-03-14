@@ -1,5 +1,5 @@
 ---
-title: Projects
+title: Projectos
 layout: default
 permalink: "/projects/"
 ---
@@ -24,6 +24,7 @@ permalink: "/projects/"
     <div class="row">
       {% for project in site.projects %}
       {% unless project.featured == true %}
+
       <div class="col-md-6 mb-5">
         {% include projectbox.html %}
       </div>

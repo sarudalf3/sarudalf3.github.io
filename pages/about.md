@@ -6,10 +6,8 @@ permalink: "/about/"
 ---
 
 <div class="avatar self" style="text-align: center;">
-    <img src="/assets/images/about_me.png"  style="width: 330px;"/>
+    <img src="/assets/images/about_me.png"  style="width: 400px;"/>
 </div>
-
-&nbsp; 
 
 Hola y gracias por llegar hasta aquí. 
 
@@ -17,21 +15,21 @@ Soy Rubén, estadístico, ambientalista, programador, lector y viajero.
 
 Con más de 6 años de experiencia en diversas áreas, he realizado transformación y limpieza de datos en diversos softwares (Python, Excel, SAS, SQL, R, SPSS Modeler, STATA), text mining, validación y calibración de modelos estadísticos, visualización de datos, automatización de procesos, auditoría de procesos complejos de cálculo e implementación de indicadores de desempeño.
 
-Soy hábil en integrarme a equipos de trabajo, propiciando espacios de colaboración, compromiso y cohesión, con alta orientación a los resultados, mejora continua y capacidad de gestión. Respetuoso de las opiniones, creencias religiosas y orientación sexual de las personas. Promotor del cuidado al medio ambiente, el hábito de reciclaje y la constante medición de nuestra huella de carbono. 
+Soy hábil en integrarme a equipos de trabajo, propiciando espacios de colaboración, compromiso y cohesión. Respetuoso de las diversas opiniones, creencias religiosas y orientación sexual de las personas. Promotor del cuidado al medio ambiente, el hábito de reciclaje y la constante medición de nuestra huella de carbono. 
 
 <!--Estadístico, Magíster en estadística (U. Valparaíso) y licenciado en ciencia estadística (U. Católica de Valparaíso), con amplia experiencia en bases de datos en diversos lenguajes de programación (SAS, STATA, R, Python, SQL, MS Access, SPSS modeler), desarrollo en modelos de regresión, análisis multivariado, series de tiempo y algoritmos de machine learning; orientación al desarrollo de herramientas efectivas de visualización de datos, implementación de indicadores de desempeño, automatización de procesos y aprendizaje continuo en el campo de data science; con nivel de inglés avanzado. Con más de 5 años de experiencia, el desempeño mostrado da cuenta de una alta orientación a resultados y a la mejora continua, rápida adaptación, capacidad de gestión, excelencia en el servicio al cliente interno y habilidad para integrarse a equipos de trabajo, propiciando un clima laboral de colaboración, compromiso y cohesión.-->
 
 Obtuvé el grado de Magíster en estadística en la Universidad de Valparaíso (UV) y el grado de Licenciado en ciencia estadística en la Pontificia Universidad Católica de Valparaíso (PUCV), con nivel de inglés intermedio alto y una variedad de cursos de perfeccionamiento. Actualmennte realizo un diplomado en ciencia de datos en la Universidad del Desarrollo (UDD).
 
-Como estudiante, obtuve una beca para realizar estudios de postgrado. Participé en equipos de investigación científica, consultoria estadística y centro de estudiantes. Realicé un programa de intercambio el año 2007 en la Universidad Complutense de Madrid - España, y difundí investigación científica en diferentes congresos de ciencias matemáticas por Sudamérica.
+Como estudiante, obtuve una beca para realizar estudios de postgrado. Participé en equipos de investigación científica, consultoria estadística y centro de estudiantes. Realicé un programa de intercambio el año 2007 en la Universidad Complutense de Madrid - España, y difundí investigación científica en diferentes congresos de modelación estadística por Sudamérica.
 
 En mis étapa de viajero llegué a conocer 15 países, habiendo estado como residente temporal en Canadá y España. Algunos viajes increibles que he realizado es recorrer la gran muralla China; bucear en las costas de Tailandia; ver auroras boreales en el ártico; recorrer ciudades ancentrales como Angkor Wat y Macchu Picchu; practicar rappel en San José de Maipo, sunboarding en el valle de la muerte, kayaking en el parque Canadiense de Banff ó trekking por el circuito W del parque Torres del Paine.
 
 En el período de cuarentena Covid-19 comencé a aprender diversas áreas de data science; mediante una licencia de Coursera realicé cursos de programación en Python; visualización de datos en Power BI y Tableau; modulos de data science, Machine Learning y Deep Learning. Realicé un bootcamp de Full-Stack Python en Coding Dojo en el que aprendí el lenguaje HTML, CSS, Javascript y la librería django de Python; descrubrí como enlazar bases de datos en websites. Este aprendizaje fue el inicio como programador, dónde la habilidad de ágil lector, dominio de inglés y mi profesión contribuyen a construir un sólido perfil como Data Scientist.
 
-El motivo de mi nick es por el señor de Anillos, la amalgama entre los nombres de los magos Saruman y Gandalf es sarudalf.
+Mi nickname se debe al señor de Anillos, sarudalf es la amalgama de los nombres de los magos Saruman y Gandalf.
 
-Te dejo el link de mi cv y un link de contacto para más información.
+Te dejo mi cv y un link de contacto para más información.
 
 <center>
     <a class="d-inline-block" target="_blank" href="https://drive.google.com/file/d/1xLslNc4KeybGKXKlaKoS6cFvLjpWgOzu/view?usp=sharing">
