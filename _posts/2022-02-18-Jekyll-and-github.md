@@ -162,7 +162,7 @@ Puedes revisar temas de websites [aquí](https://jekyllrb.com/docs/themes/) y de
     <div class="console mt-2 mb-4">
         <div class="consolebody">
             <p> # Crear un nuevo sitio jekyll en ./folder </p>
-            <p> $ jekyll new folder </p>
+            <p> $ jekyll new &lt;folder&gt; </p>
         </div>
     </div>
 

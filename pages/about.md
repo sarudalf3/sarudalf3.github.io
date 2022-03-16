@@ -9,9 +9,7 @@ permalink: "/about/"
     <img src="/assets/images/about_me.png"  style="width: 400px;"/>
 </div>
 
-Hola y gracias por llegar hasta aquí. 
-
-Soy Rubén, estadístico, ambientalista, programador, lector y viajero.
+Hola y gracias por llegar hasta aquí; soy Rubén, estadístico, ambientalista, programador, lector y viajero. 
 
 Con más de 6 años de experiencia en diversas áreas, he realizado transformación y limpieza de datos en diversos softwares (Python, Excel, SAS, SQL, R, SPSS Modeler, STATA), text mining, validación y calibración de modelos estadísticos, visualización de datos, automatización de procesos, auditoría de procesos complejos de cálculo e implementación de indicadores de desempeño.
 
@@ -25,7 +23,7 @@ Como estudiante, obtuve una beca para realizar estudios de postgrado. Participé
 
 En mis étapa de viajero llegué a conocer 15 países, habiendo estado como residente temporal en Canadá y España. Algunos viajes increibles que he realizado es recorrer la gran muralla China; bucear en las costas de Tailandia; ver auroras boreales en el ártico; recorrer ciudades ancentrales como Angkor Wat y Macchu Picchu; practicar rappel en San José de Maipo, sunboarding en el valle de la muerte, kayaking en el parque Canadiense de Banff ó trekking por el circuito W del parque Torres del Paine.
 
-En el período de cuarentena Covid-19 comencé a aprender diversas áreas de data science; mediante una licencia de Coursera realicé cursos de programación en Python; visualización de datos en Power BI y Tableau; modulos de data science, Machine Learning y Deep Learning. Realicé un bootcamp de Full-Stack Python en Coding Dojo en el que aprendí el lenguaje HTML, CSS, Javascript y la librería django de Python; descrubrí como enlazar bases de datos en websites. Este aprendizaje fue el inicio como programador, dónde la habilidad de ágil lector, dominio de inglés y mi profesión contribuyen a construir un sólido perfil como Data Scientist.
+En el período de cuarentena Covid-19 comencé a aprender diversas áreas de data science; mediante una licencia de Coursera aprendí a programar en Python; mostrar visualizaciones en Power BI y Tableau; tópicos de Data Science, Machine Learning y Deep Learning. Mediante SENCE realicé un bootcamp de Full-Stack Python. Este aprendizaje fue el inicio como programador, dónde la habilidad de ágil lector, dominio de inglés y mi profesión contribuyen a construir un sólido perfil como Data Scientist.
 
 Mi nickname se debe al señor de Anillos, sarudalf es la amalgama de los nombres de los magos Saruman y Gandalf.
 
