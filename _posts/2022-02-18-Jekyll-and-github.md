@@ -185,6 +185,4 @@ Puedes revisar temas de websites [aquí](https://jekyllrb.com/docs/themes/) y de
         </div>
     </div>
 
-*Nota: Puedes visualizar tu trabajo en la URL [http://localhost:4000](http://localhost:4000)*    
-
-*Para modificar el tema, puedes leer la documentación de jekyll [aquí](https://jekyllrb.com/docs/).*
+*Puedes leer la documentación de jekyll [aquí](https://jekyllrb.com/docs/).*
