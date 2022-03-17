@@ -8,11 +8,11 @@ image: assets/images/posts/venv/venv.png
 
 Un entorno virtual es un espacio donde podemos instalar librerías específicas para diferentes proyectos en ambientes diferentes al ambiente base de Python. Uno de los motivos de usar entornos virtuales es tener espacios de trabajo en las cuales puedes instalar distintas versiones de librerías y así no generar conflictos de instalación entre ellas y mantener separado distintos ambientes de trabajo según tus poryectos.
 
-Para la creación de un entorno vitual es posible mediante command prompt, bash y powershell; este post se enfoca en el uso de este último.
+Para la creación de un entorno vitual es posible mediante cmd, bash y powershell; este post se enfoca en el uso de este último.
 
-Python es un lenguaje en el que seagregan librerias según tus necesidades, aunque para ello primero debemos saber que es pip.
+Python es un lenguaje en el que se agregan librerias según tus necesidades, aunque para ello primero debemos saber que es pip.
 
-PIP es el sistema de administración de librerías usado para instalar y administrar paquetes/librerias escritos en Python. Estos archivos son almacenados en un gran repositorio en línea, denominado Python Package Index (PyPI).  Para versiones superiores a 2.7.9 y 3.4 de Python esta librería viene instalado por defecto. 
+PIP es el sistema de administración de librerías usado para instalar y administrar paquetes/librerias en el lenguaje de Python. Estos archivos son almacenados en un gran repositorio en línea, denominado Python Package Index (PyPI).  Para versiones superiores a 2.7.9 y 3.4 de Python esta librería viene instalado por defecto. 
 
 Si no tienes instalado pip, te explicamos que hay dos alternativas de instalación:
 
@@ -24,7 +24,7 @@ Si no tienes instalado pip, te explicamos que hay dos alternativas de instalaci�
         <pre>py -m ensurepip --upgrade </pre>
     </div>
 
-    Más detalles de como ensurepip funciona y como es usado está disponible en la documentación de la librería. La opción <pre_inline>--upgrade</pre_inline> instala la versión más reciente de la librería.
+    Más detalles de como ensurepip usar la librería, revisar la documentación de la librería. La opción <pre_inline>--upgrade</pre_inline> instala la versión más reciente de la librería.
 
 2. **git-pip.py**
 
@@ -60,7 +60,7 @@ Ahora explicaremos como utilizar un ambiente virtual usando Powershell.
         <pre>pip list</pre>
     </div>  
 
-    Esto muestra todas las librerías instaladas. Si en la lista no aparece la librería virtualenv, hay que instalarla usando
+    Esto muestra todas las librerías instaladas. Si en la lista no aparece la librería virtualenv, hay que instalarla usando el código
     
     <div class=" mt-2 mb-4"> 
         <pre>pip install virtualenv</pre>
@@ -94,19 +94,19 @@ Ahora explicaremos como utilizar un ambiente virtual usando Powershell.
         <pre>deactivate</pre>
     </div>
 
-6. Activar una ambiente virtual ya instalado
+6. Activar un ambiente virtual ta creado
 
     <div class=" mt-2 mb-4"> 
         <pre>&lt;other_venv_folder&gt;\other_venv_name\Scripts\activate.ps1 </pre>
     </div>
 
-7. Obtener las librerias instaladas en un ambiente virtual y guardarlos en el directorio <pre_inline>&lt;folder_to_save_file&gt;</pre_inline> con el nombre de archivo <pre_inline>requirements.txt</pre_inline>. 
+7. Obtener las librerias instaladas en un ambiente virtual y guardarlos en el directorio <pre_inline>&lt;folder_to_save_file&gt;</pre_inline> y nombre de archivo <pre_inline>requirements.txt</pre_inline>. 
 
     <div class=" mt-2 mb-4"> 
         <pre>pip freeze &gt; &lt;folder_to_save_file&gt;\requirements.txt </pre>
     </div>
 
-8. Instalar las librerías que se encuentran en el archivo <pre_inline>requirements.txt</pre_inline> que se encuentra en el directorio <pre_inline>&lt;folder_to_load_file&gt;</pre_inline>
+8. Instalar las librerías que se encuentran en el archivo <pre_inline>requirements.txt</pre_inline> del directorio <pre_inline>&lt;folder_to_load_file&gt;</pre_inline>
 
     <div class=" mt-2 mb-4"> 
         <pre>pip install -r &lt;folder_to_load_file&gt;\requirements.txt </pre>

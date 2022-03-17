@@ -28,7 +28,7 @@ Puedes revisar temas de websites [aquí](https://jekyllrb.com/docs/themes/) y de
     1.1 - Ir a Settings > System > About
 
     <div class="image_center mb-4 mt-2">
-        <img src="/assets/images/posts/jekyll/01.jpg" alt="system device" style="max-width: 100%; max-height: 100%; height: 470px;" />
+        <img src="/assets/images/posts/jekyll/01.jpg" alt="system device" style="max-width: 100%; max-height: 100%; height: 420px;" />
     </div>
 
     Debes tener un sistema de 64 bits y una OS mayor a 14393 (ver las actualizaciones de Windows).
@@ -36,7 +36,7 @@ Puedes revisar temas de websites [aquí](https://jekyllrb.com/docs/themes/) y de
     1.2 - Ir a Settings > Update & Security > For developers
 
     <div class="image_center mb-4 mt-2">
-        <img src="/assets/images/posts/jekyll/02.jpg" alt="dev mode" style="max-width: 100%; max-height: 100%; height: 400px;" />
+        <img src="/assets/images/posts/jekyll/02.jpg" alt="dev mode" style="max-width: 100%; max-height: 100%; height: 370px;" />
     </div>
 
     Aqui debes activar el modo de desarrollador.
@@ -44,13 +44,13 @@ Puedes revisar temas de websites [aquí](https://jekyllrb.com/docs/themes/) y de
     1.3 - Ir a activar o desactivar funciones de windows, este opción se activa buscando en el menú de windows
 
     <div class="image_center mb-4 mt-2">
-        <img src="/assets/images/posts/jekyll/03.jpg" alt="turn features on" style="max-width: 100%; max-height: 100%; height: 420px;" />
+        <img src="/assets/images/posts/jekyll/03.jpg" alt="turn features on" style="max-width: 100%; max-height: 100%; height: 400px;" />
     </div>
 
     Este opción abre una ventana emergente en la que tienes que seleccionar la opción Subsistema de Windows para Linux
 
     <div class="image_center mb-4 mt-2">
-        <img src="/assets/images/posts/jekyll/04.jpg" alt="Linux subsystem" style="max-width: 100%; max-height: 100%; height: 280px;" />
+        <img src="/assets/images/posts/jekyll/04.jpg" alt="Linux subsystem" style="max-width: 100%; max-height: 100%; height: 240px;" />
     </div>
 
     Después de activar esta función, debes **reiniciar** el equipo. Ya estás en condiciones de instalar Ubuntu.
@@ -65,7 +65,7 @@ Puedes revisar temas de websites [aquí](https://jekyllrb.com/docs/themes/) y de
 3. Después de instalar Ubuntu, tienes que abrir la aplicación. Allí se te pedira un nombre de usuario y una contraseña (que usarás después).
 
     <div class="image_center mb-4 mt-2">
-        <img src="/assets/images/posts/jekyll/06.jpg" alt="Ubuntu running" style="max-width: 100%; max-height: 100%; width: 550px;" />
+        <img src="/assets/images/posts/jekyll/06.jpg" alt="Ubuntu running" style="max-width: 100%; max-height: 100%; width: auto;" />
     </div>
 
     Ya estamos listos con la instalación de ububtu. Ahora tenemos que instalar jekyll en el ambiente de ruby para precargar diseños de paginas web.
@@ -73,7 +73,7 @@ Puedes revisar temas de websites [aquí](https://jekyllrb.com/docs/themes/) y de
 4. Abrir una ventana de command prompt (tecla Windows + cmd + enter)
 
     <div class="image_center mb-4 mt-2">
-        <img src="/assets/images/posts/jekyll/07.jpg" alt="cmd " style="max-width: 100%; max-height: 100%; height: 500px;" />
+        <img src="/assets/images/posts/jekyll/07.jpg" alt="cmd " style="max-width: 100%; max-height: 100%; width:220;" />
     </div>
 
     4.1 Ingresar a método de subsistema de Linux en Windows. Escribir en el command prompt
