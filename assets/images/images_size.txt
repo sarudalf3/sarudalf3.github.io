@@ -1,5 +1,1 @@
-images size 
-height: 1100
-width: 780
-
-#change 600x425
+{image_size: 600x425}
