@@ -30,7 +30,7 @@ footermenu:
   url: "about/"  
 
 - title: Resume - CV
-  url: https://drive.google.com/file/d/1xLslNc4KeybGKXKlaKoS6cFvLjpWgOzu/view?usp=sharing  
+  url: /assets/cv/202109_RM_cv.pdf 
   external: true
 
 - title: Contact
