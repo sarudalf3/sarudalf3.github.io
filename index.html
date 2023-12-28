@@ -8,21 +8,18 @@ layout: default
 {% if page.url == "/" %}
 
   <div class="rounded mb-5 mt-1 hero">
-    <div class="row align-items-center justify-content-between">
+  <div class="row align-items-center justify-content-between">
+    <div class="col-md-6 order-md-2 text-center text-md-left">
       <h1 class="font-weight-bold pt-2 pb-2 mb-2 mt-3 serif-font">Tips para data lovers</h1>
-
-      <div class="col-md-6">
-        <p class="lead mt-3 mb-6">Hola, quiero compartir proyectos y artículos que he realizado en área de data science, recibir 
-          feedback de la comunidad y que tengas información acerca de mí. 
-        </p>
-        <div class="pb-3 pt-1" style="text-align:center">
-          <a href="{{site.baseurl}}/about" class="btn btn-dark text-white px-5 btn-lg mb-4">Acerca de mí</a>
-        </div>  
-      </div>
-      <div class="image_center col-md-6 pl-0 pl-lg-4 pb-5"> <!-- pr-lg-4  pl-lg-1"-->
-        <img class="intro" style="width:380px;" src="{{site.baseurl}}/assets/images/intro.png">      
+      <p class="lead mt-3 mb-6">Hola, quiero compartir proyectos y artículos que he realizado en el área de data science, recibir feedback de la comunidad y que tengas información acerca de mí.</p>
+      <div class="pb-3 pt-1">
+        <a href="{{site.baseurl}}/about" class="btn btn-dark text-white px-5 btn-lg mb-4">Acerca de mí</a>
       </div>
     </div>
+    <div class="image_center col-md-6 pl-0 pl-lg-4 pb-5 order-md-1">
+      <img class="intro" style="width:380px;" src="{{site.baseurl}}/assets/images/intro.png">
+    </div>
+  </div>
   </div>
 
 {% endif %}
