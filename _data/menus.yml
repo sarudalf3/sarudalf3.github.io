@@ -1,0 +1,38 @@
+# Top Menu
+topmenu:
+
+- title: Home
+  url: ""
+
+- title: Projects
+  #url: "contact/"
+  url: "projects/"
+
+- title: Contact
+  url: "contact/"
+  
+
+- title: About me  
+  url: about/
+  class: "ml-2 btn btn-dark text-white px-3"
+  #external: true
+
+# Footer Menu
+footermenu:
+
+- title: Blog
+  url: ""
+
+- title: Projects
+  url: "projects/"
+
+- title: About Me
+  url: "about/"  
+
+- title: Resume - CV
+  url: /assets/cv/Resume_Ruben_Miranda.pdf 
+  external: true
+
+- title: Contact
+  url: "contact/"
+  

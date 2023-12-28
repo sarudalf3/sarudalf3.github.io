@@ -1,0 +1,46 @@
+---
+title: Proyectos
+layout: default
+permalink: "/projects/"
+---
+
+<!-- Featured projects
+================================================== -->
+<section class="row">
+  {% assign sorted = site.projects | sort: 'date' | reverse  %}
+  {% for project in sorted %}
+      {% if project.featured == true %}
+          <div class="col-md-4 mb-5">
+          {% include projectbox.html %}
+          </div>
+      {% endif %}
+  {% endfor %}
+  </div>
+</section>
+
+<!-- projects List with Sidebar (except featured)
+================================================== -->
+<section class="row">
+  <div class="col-sm-8">
+    <div class="row">
+    {% assign sorted = site.projects | sort: 'date' | reverse  %}
+      {% for project in sorted %}
+      {% unless project.featured == true %}
+
+      <div class="col-md-6 mb-5">
+        {% include projectbox.html %}
+      </div>
+      {% endunless %}
+      {% endfor %}
+    </div>
+    <!-- Pagination -->
+    <div class="bottompagination">
+      <span class="navigation" role="navigation">
+          {% include pagination.html %}
+      </span>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    {% include sidebar.html %}
+  </div>
+</section>

@@ -1,0 +1,87 @@
+/* 
+Don't want to use sass and simply modify the stylesheet in the old css fashion? 
+Just customize your theme here.
+================================================== */
+
+/*body {
+	background: #eee;
+}*/
+
+/*.avatar {
+	border-radius: 50%;
+	display: inline-block;
+	line-height: 0;	
+
+}*/
+
+.dark-name {
+	color:rgba(0,0,0,1);
+}
+
+.avatar {
+  display: inline-block;
+  /*width: 40%;*/
+  border-radius: 50%;
+  line-height: 0;	
+  margin-left: 25%;
+  margin-right: 25%;
+  }
+
+
+.self {border: 3px solid #47a2ff;}
+
+.image_center {
+  display: flex;
+  justify-content: center;
+}
+
+.console {
+  font-family: Monaco,Consolas,"Lucida Console",monospace;
+  width: 95%;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.console .consolebody {
+  /*border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;*/
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 20px;
+  height: calc(100% - 20px);
+  /*overflow: scroll;*/
+  background-color: #000;
+  color: #eff;
+  font-size: 15px;
+  line-height: 1rem;
+}
+
+pre {
+  border-radius: 8px;
+  font-family: Consolas,monospace;
+  margin-bottom: 15px;
+  /*overflow: auto;*/
+  padding: 20px;
+  background-color: #f9f9f9;
+  height: calc(100% - 20px);
+  color: #273239;
+  font-size: 15pt;
+  white-space: pre;
+  width: 95%;
+  box-sizing: border-box;
+  margin: auto;
+  line-height: 1rem;
+}
+
+pre_inline {
+  border-radius: 8px;
+  font-family: Consolas,monospace;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #f4f4f4;
+  color: #273239;
+  font-size: 15pt;
+  white-space: pre;
+  /*margin: auto;
+  line-height: 1rem;*/
+}
