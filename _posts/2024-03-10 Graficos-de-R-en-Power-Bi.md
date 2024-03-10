@@ -28,7 +28,7 @@ Una vez instalado R, Power BI Desktop lo habilitará automáticamente. Para veri
 La siguiente figura muestra un ejemplo de las opciones de configuración:
 
 <div class="image_center mb-4 mt-2">
-    <img src="/assets/images/posts/pbix/r_install.jpg" alt="pbix insert" style="max-width: 100%; max-height: 100%;"/> 
+    <img src="/assets/images/posts/pbix/r_install.jpg" alt="pbix insert" style="max-width: 80%; max-height: 80%;"/> 
 </div>
 
 ## Creación de Objetos Visuales de R
@@ -37,7 +37,7 @@ Para crear un objeto visual de R en Power BI Desktop:
 1. Obten un conjunto de datos en Power BI. A modo de ejemplo simulé 20 observaciones de distribuciones normales con distinta media y desviación estándar de 5.
 
     <div class="image_center mb-4 mt-2">
-    <img src="/assets/images/posts/pbix/database.jpg" alt="pbix db" style="max-width: 100%; max-height: 100%;"/> 
+    <img src="/assets/images/posts/pbix/database.jpg" alt="pbix db" style="max-width: 35%; max-height: 35%;"/> 
     </div>
 
 2. Selecciona el icono Objeto visual de R en el panel Visualizaciones.
@@ -47,15 +47,17 @@ Para crear un objeto visual de R en Power BI Desktop:
     Agrega los campos desde el panel Valores que quieras consumir en el script de R. En el ejemplo se seleccionan x e y, con opción de no resumir el campo.
      
     <div class="image_center mb-4 mt-2">
-    <img src="/assets/images/posts/pbix/Viz.jpg" alt="pbix viz" style="max-width: 100%; max-height: 100%;"/> 
+    <img src="/assets/images/posts/pbix/Viz.jpg" alt="pbix viz" style="max-width: 50%; max-height: 50%;"/> 
     </div>
 
 3. Ingresa el código de programación en la sección del script R del gráfico.
 
-    Tomar en cuenta que el dataframe que incluye los campos seleccionados, eliminando los duplicados. Un ejemplo de visualización es como muestra la figura.
+    Tomar en cuenta que el dataframe de datos se denomina *dataset*, e incluye registros no duplicados de los campos seleccionados. 
+    
+    Un ejemplo de visualización es como muestra la figura.
 
     <div class="image_center mb-4 mt-2">
-    <img src="/assets/images/posts/pbix/plot.jpg" alt="pbix plot" style="max-width: 100%; max-height: 100%;"/> 
+    <img src="/assets/images/posts/pbix/plot.jpg" alt="pbix plot" style="max-width: 70%; max-height: 70%;"/> 
     </div>
 
 4. Seguridad de Scripts R
