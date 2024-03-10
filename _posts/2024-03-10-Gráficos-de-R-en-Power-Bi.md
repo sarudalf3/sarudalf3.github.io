@@ -7,7 +7,9 @@ image: assets/images/posts/pbix.jpg
 
 ---
 
-# Cómo Crear Visualizaciones de R en Power BI
+En el proceso de automatización de procesos de reportabilidad, encontré una buena alternativa en personalizar gráficas usando la librería ggplot2 de R, para así tener más control en los elementos visuales.
+
+<!--- Cómo Crear Visualizaciones de R en Power BI--->
 
 ## Introducción
 
