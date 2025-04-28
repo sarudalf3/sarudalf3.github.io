@@ -9,31 +9,33 @@ permalink: "/about/"
     <img src="/assets/images/about_me.png"  style="width: 400px;"/>
 </div>
 
-Hola y gracias por llegar hasta aquí. Soy Rubén, estadístico, ambientalista, programador, lector y viajero. 
+¡Hola! Gracias por llegar hasta aquí.
+Soy Rubén: Estadístico, ambientalista, programador, lector y viajero.
 
-Con más de 7 años de experiencia en recopilación, análisis, modelación, visualización e interpretación de datos; con dominio en diversos softwares de programación (Python, R, SAS, STATA, SPSS), realizando análisis de text mining, implementación y calibración de modelos estadísticos, visualización de datos, automatización de procesos, auditoría de complejos procesos de datos, implementación de KPI's, construcción y seguimiento de proyectos analíticos.
+Cuento con más de 7 años de experiencia en el mundo de los datos: desde la recopilación, análisis y modelación, hasta la visualización y la interpretación de información.
+A lo largo de mi carrera he trabajado con diversos lenguajes y plataformas (Python, R, SAS, STATA, SPSS), construyendo modelos predictivos, automatizando procesos, auditando flujos de datos complejos y desarrollando KPIs estratégicos.
 
-La variada experiencia laboral proporciona una ventaja competitiva al impulsar la capacidad de resolver problemas y generar ideas valiosas. La exposición a diversos tipos de datos y problemas en diversos rubros amplía la perspectiva, permitiendo aplicar soluciones innovadoras. Además, la experiencia mejora la eficiencia en la manipulación y procesamiento de datos, lo que lleva a una toma de decisiones más informada y precisa. Esta variada experiencia ha fomentado mi adaptabilidad, creatividad y capacidad para colaborar con personas de distintos ámbitos, lo que me posiciona como un candidato versátil y valioso en cualquier entorno empresarial.
+Mi experiencia laboral diversa ha sido una ventaja competitiva: me ha permitido abordar problemas desde distintos ángulos, proponer soluciones innovadoras y adaptarme con facilidad a diferentes industrias y desafíos.
+Además, ha fortalecido mi habilidad para colaborar con equipos multidisciplinarios, respetando siempre la diversidad de opiniones, culturas y orientaciones.
 
-Soy hábil en integrarme a equipos de trabajo, propiciando espacios de colaboración, compromiso y cohesión; respeto la diversidad de opinión, religión y orientación sexual. Promotor del cuidado al medio ambiente, el hábito de reciclaje e implusor de cambios en nuestra conducta para minimizar nuestro impacto en la naturaleza.
+Soy un convencido del trabajo colaborativo y del poder de las pequeñas acciones para generar grandes cambios. Creo en el respeto por el medio ambiente, promuevo hábitos de reciclaje y busco constantemente reducir mi impacto en la naturaleza.
 
-<!--Estadístico, Magíster en estadística (U. Valparaíso) y licenciado en ciencia estadística (U. Católica de Valparaíso), con amplia experiencia en bases de datos en diversos lenguajes de programación (SAS, STATA, R, Python, SQL, MS Access, SPSS modeler), desarrollo en modelos de regresión, análisis multivariado, series de tiempo y algoritmos de machine learning; orientación al desarrollo de herramientas efectivas de visualización de datos, implementación de indicadores de desempeño, automatización de procesos y aprendizaje continuo en el campo de data science; con nivel de inglés avanzado. Con más de 5 años de experiencia, el desempeño mostrado da cuenta de una alta orientación a resultados y a la mejora continua, rápida adaptación, capacidad de gestión, excelencia en el servicio al cliente interno y habilidad para integrarse a equipos de trabajo, propiciando un clima laboral de colaboración, compromiso y cohesión.-->
+🎓 En el ámbito académico, soy Magíster en Estadística por la Universidad de Valparaíso y Licenciado en Ciencia Estadística por la Pontificia Universidad Católica de Valparaíso.
+Complementé mi formación con un Diplomado en Ciencia de Datos en la Universidad del Desarrollo, y he cursado diversas especializaciones en Data Science, Machine Learning y Deep Learning.
 
-Obtuvé el grado de Magíster (MSc) en estadística en la Universidad de Valparaíso (UV) y el grado de Licenciado (BSc) en ciencia estadística en la Pontificia Universidad Católica de Valparaíso (PUCV), con nivel de inglés intermedio alto y una variedad de cursos de perfeccionamiento. Recientemente terminé un diplomado en ciencia de datos en la Universidad del Desarrollo (UDD) y en constante aprendizaje de técnicas en el área de Data Science.
+Durante mi época de estudiante, obtuve una beca de postgrado, participé en proyectos de investigación científica, centros de estudiantes y realicé un intercambio académico en la Universidad Complutense de Madrid. También presenté investigaciones en congresos de modelación estadística en distintos países de Sudamérica.
 
-Como estudiante, obtuve una beca para realizar estudios de postgrado. Participé en equipos de investigación científica, consultoria estadística y centro de estudiantes. Realicé un programa de intercambio el año 2007 en la Universidad Complutense de Madrid - España, y difundí investigación científica en diferentes congresos de modelación estadística por Sudamérica.
+🌍 Como viajero, he recorrido 15 países y he vivido en Canadá y España.
+Amo las actividades al aire libre: he caminado la Gran Muralla China, buceado en Tailandia, visto auroras boreales en el Ártico, practicado rappel, sandboarding, kayaking y trekking en algunos de los rincones más increíbles del planeta.
 
-En mi étapa de viajero llegué a conocer 15 países, siendo residente temporal en Canadá y España. Amante de actividades outdoor, lo que me ha llevado a recorrer la gran muralla China; bucear en Tailandia; ver auroras boreales en el ártico; hacer rappel, sunboarding, trekking, camping, kayaking en variados lugares del planeta. 
+Durante la cuarentena por Covid-19, aproveché el tiempo para retomar y potenciar el aprendizaje continuo: perfeccioné mis habilidades en programación Python, visualización con Power BI y Tableau, y profundicé en técnicas de machine learning y deep learning. También cursé un bootcamp de Full-Stack Python Developer que impulsó mi perfil como programador.
 
-En el período de cuarentena Covid-19 retomé el aprendizaje en nuevas herramientas analíticas disponibles, aprendiendo a programar en Python, crear visualizaciones en Power BI y Tableau, ejercitar diversos tópicos en Data Science, Machine Learning y Deep Learning. Mediante SENCE realicé un bootcamp de Full-Stack Python, este aprendizaje fue el inicio como programador, dónde la habilidad de ágil lector, dominio de inglés y mi profesión contribuyen a construir un sólido perfil de data scientist.
+Hoy me desempeño desarrollando soluciones innovadoras de analítica avanzada en el sector minero: diseño y difundo dashboards estratégicos, implemento pipelines de datos utilizando Snowflake y SAP (PM/MM), transformo información con R/Python y visualizo resultados a través de Power BI.
 
-Actualmente desarrollo soluciones innovadoras de análitica avanzada en el rubro minero, con énfasis en el desarrollo, diseño y difusión de dashboards y paneles de control de KPIs; implementado pipelines con input de data en Snowflake y los módulos de PM/MM de SAP, transformando la información mediante R/Python, y visualizando los resultados en Power BI.
+Ah, y si te preguntas de dónde viene mi nickname sarudalf... es una mezcla de Saruman y Gandalf.
+Porque, claro, no podía faltar un guiño a mi amor por El Señor de los Anillos.
 
-<!--En el período de cuarentena Covid-19 comencé el proceso de continuous learning; mediante una licencia de Coursera aprendí a programar en Python, crear visualizaciones en Power BI y Tableau, ejercitar diversos tópicos en Data Science, Machine Learning y Deep Learning. Mediante SENCE realicé un bootcamp de Full-Stack Python. Este aprendizaje fue el inicio como programador, dónde la habilidad de ágil lector, dominio de inglés y mi profesión contribuyen a construir un sólido perfil como Data Scientist.-->
-
-Mi nickname se debe al señor de Anillos, sarudalf es la amalgama de los nombres de los magos Saruman y Gandalf.
-
-Te dejo mi cv y un link de contacto para más información.
+Si quieres saber más sobre mí, te invito a revisar mi CV o a contactarme. 🚀
 
 <center>
     <a class="d-inline-block" target="_blank" href="/assets/cv/Resume_Ruben_Miranda.pdf">
