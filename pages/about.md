@@ -12,7 +12,7 @@ permalink: "/about/"
 ¡Hola! Gracias por llegar hasta aquí.
 Soy Rubén: Estadístico, ambientalista, programador, lector y viajero.
 
-Cuento con más de 7 años de experiencia en el mundo de los datos: desde la recopilación, análisis y modelación, hasta la visualización y la interpretación de información.
+Con cerca de 10 años de experiencia en el mundo de los datos: desde la recopilación, análisis y modelación, hasta la visualización y la interpretación de información.
 A lo largo de mi carrera he trabajado con diversos lenguajes y plataformas (Python, R, SAS, STATA, SPSS), construyendo modelos predictivos, automatizando procesos, auditando flujos de datos complejos y desarrollando KPIs estratégicos.
 
 Mi experiencia laboral diversa ha sido una ventaja competitiva: me ha permitido abordar problemas desde distintos ángulos, proponer soluciones innovadoras y adaptarme con facilidad a diferentes industrias y desafíos.
