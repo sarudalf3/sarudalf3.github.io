@@ -97,7 +97,7 @@ ggplot(waterfall_df, aes(xmin = factor, xmax = factor, ymin = inicio, ymax = fin
   )) +
   # Personalización de Ejes y Estilo
   scale_y_continuous(expand = expansion(mult = c(0, 0.1))) + # Añadir espacio arriba para etiquetas
-  coord_cartesian(ylim = c(0, NA)) +
+  coord_cartesian(ylim = c(0, NA)) + #limites eje y
   labs(
     title = "Waterfall tratamiento planta de Concentrado Feb-26",
     subtitle = "R/ggplot2",
@@ -120,12 +120,12 @@ Al ejecutar el código, obtenemos el siguiente gráfico.
     <img src="/assets/images/posts/waterfall_02.jpg" alt="waterfall_02.jpg" style="max-width: 100%; max-height: 100%;"/> 
 </div>
 
-Principales Hallazgos (Insights):
+# Principales Hallazgos
 
-Cumplimiento de Meta: Se logró un tratamiento real de 959 kt, superando el plan inicial de 939 kt en un 2.1%. A pesar de ser un resultado positivo, el análisis revela una alta variabilidad interna.
+*Cumplimiento de Meta*: Se logró un tratamiento real de 1659 kt, superando el plan inicial de 1639 kt en un 1.2%. A pesar de ser un resultado positivo, el análisis revela una alta variabilidad interna.
 
-Eficiencia en Molienda: El factor Rend. Molienda (+107 kt) destaca una optimización en el proceso o una mejor calidad en las características del mineral alimentado.
+*Eficiencia en Molienda*: El factor Rend. Molienda (+107 kt) destaca una optimización en el proceso o una mejor calidad en las características del mineral alimentado.
 
-Gestión de Disponibilidad: El éxito del periodo se apalancó en una excelente ejecución del Mantenimiento Programado (+283 kt), compensando con creces las desviaciones negativas.
+*Gestión de Disponibilidad*: El éxito del periodo se apalancó en una excelente ejecución del Mantenimiento Programado (+383 kt), compensando con creces las desviaciones negativas.
 
-Oportunidades de Mejora (Pérdidas): Se identificaron fugas de valor significativas en Procesos No Programados (-143 kt) y Fallas de Equipo (-117 kt). Estos eventos imprevistos suman una pérdida de 260 kt, señalando áreas críticas donde la implementación de modelos de Mantenimiento Predictivo podría capturar un valor latente considerable.
+*Oportunidades de Mejora (Pérdidas)*: Se identificaron fugas de valor significativas en Procesos No Programados (-243 kt) y Fallas de Equipo (-117 kt). Estos eventos imprevistos suman una pérdida de 360 kt, señalando áreas críticas donde la implementación de modelos de Mantenimiento Predictivo podría capturar un valor latente considerable.
