@@ -11,7 +11,7 @@ Estos gráficos muestran cómo una línea de base inicial se ve afectada secuenc
 
 Las aplicaciones Power BI y Tableau tienen gráficos para esto, como Data Scientists a menudo necesitamos la reproducibilidad y flexibilidad que ofrece R. En este post, replicaremos un gráfico waterfall del rendimiento de una planta de concentrado de cobre utilizando ggplot2.
 
-El Desafío: Replicar el gráfico de rendimiento de una planta de concentrado en R
+**Desafío**: Replicar el gráfico de rendimiento de una planta de concentrado en R
 <div class="image_center mb-4 mt-2">
     <img src="/assets/images/posts/waterfall_01.jpg" alt="waterfall_01.jpg" style="max-width: 100%; max-height: 100%;"/> 
 </div>
@@ -46,9 +46,9 @@ datos_waterfall <- tribble(
 ```
 
 # 2: Transformar datos
-Calcular **Inicio** y **Fin** de cada barra. Esta es la parte clave. Para un gráfico waterfall, cada barra debe comenzar donde termina la anterior. **geom_col** no lo hace automáticamente; necesitamos **geom_rect**, y **geom_rect** necesita las coordenadas *ymin* y *ymax*.
+Calcular **Inicio** y **Fin** de cada barra. Esta es la parte clave. Para un gráfico waterfall, cada barra debe comenzar donde termina la anterior. **geom_col** no lo hace automáticamente; necesitamos **geom_rect**, aunque necesita las coordenadas *ymin* y *ymax*.
 
-Utilizaremos la función **accumulate()** de purrr (parte de tidyverse) para calcular estos valores de forma limpia.
+Utilizaremos la función **accumulate()** de la librería *purrr* (parte de tidyverse) para calcular estos valores de forma limpia.
 
 # 3. Calcular las coordenadas de geom_rect (inicios y finales)
 
@@ -97,6 +97,7 @@ ggplot(waterfall_df, aes(xmin = factor, xmax = factor, ymin = inicio, ymax = fin
   )) +
   # Personalización de Ejes y Estilo
   scale_y_continuous(expand = expansion(mult = c(0, 0.1))) + # Añadir espacio arriba para etiquetas
+  coord_cartesian(ylim = c(0, NA)) +
   labs(
     title = "Waterfall tratamiento planta de Concentrado Feb-26",
     subtitle = "R/ggplot2",
