@@ -12,7 +12,10 @@ Estos gráficos muestran cómo una línea de base inicial se ve afectada secuenc
 Las aplicaciones Power BI y Tableau tienen gráficos para esto, como Data Scientists a menudo necesitamos la reproducibilidad y flexibilidad que ofrece R. En este post, replicaremos un gráfico waterfall del rendimiento de una planta de concentrado de cobre utilizando ggplot2.
 
 El Desafío: Replicar el gráfico de rendimiento de una planta de concentrado en R
-[assets/images/posts/waterfall_01.png]
+<div class="image_center mb-4 mt-2">
+    <img src="/assets/images/posts/waterfall_01.png" alt="waterfall_01.jpg" style="max-width: 80%; max-height: 80%;"/> 
+</div>
+
 Figura 1: Gráfico waterfall del Tratamiento Planificado (Feb-25) vs. el Tratamiento Real, con todas las desviaciones intermedias.
 
 Paso 1: Definir los Datos
@@ -110,8 +113,11 @@ ggplot(waterfall_df, aes(xmin = factor, xmax = factor, ymin = inicio, ymax = fin
 ```
 
 Resultados e interpretación
-Al ejecutar el código, obtenemos el siguiente gráfico [assets/images/posts/waterfall_01.png].
+Al ejecutar el código, obtenemos el siguiente gráfico.
 
+<div class="image_center mb-4 mt-2">
+    <img src="/assets/images/posts/waterfall_01.png" alt="waterfall_02.jpg" style="max-width: 80%; max-height: 80%;"/> 
+</div>
 
 Principales Hallazgos (Insights):
 
