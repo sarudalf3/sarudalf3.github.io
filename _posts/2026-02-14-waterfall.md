@@ -6,7 +6,7 @@ author: rmirfa
 image: assets/images/posts/waterfall.jpg
 ---
 
-En la industria minera y de procesos, el *tratamiento* de mineral es una métrica crítica. Para entender por qué no se alcanzó una meta o cómo se superó, se utilizan gráficos *Waterfall*.
+En la industria minera, el **tratamiento** de mineral es una métrica crítica. Para entender por qué no se alcanzó una meta o cómo se superó, se utilizan gráficos **Waterfall**.
 Estos gráficos muestran cómo una línea de base inicial se ve afectada secuencialmente por factores positivos (ganancias de rendimiento) y negativos (fallas, paradas, stockpiles bajos).
 
 Las aplicaciones Power BI y Tableau tienen gráficos para esto, como Data Scientists a menudo necesitamos la reproducibilidad y flexibilidad que ofrece R. En este post, replicaremos un gráfico waterfall del rendimiento de una planta de concentrado de cobre utilizando ggplot2.
@@ -18,11 +18,9 @@ Las aplicaciones Power BI y Tableau tienen gráficos para esto, como Data Scient
 
 Figura 1: Gráfico waterfall del Tratamiento Planificado (Feb-25) vs. el Tratamiento Real, con todas las desviaciones intermedias.
 
-Paso 1: Definir los Datos
-
 Primero hay que *leer* los datos del gráfico original. En un flujo de trabajo real, estos datos vendrían de una base de datos de producción, en este ejemplo los codificaremos manualmente.
 
-Nota:  Es necesario la columna de *Inicio* y *Fin* para cada barra para que el comando **geom_rect** funcione.
+Nota:  Es necesario la columna de *Inicio* y *Fin* en cada barra para que el comando **geom_rect** funcione.
 
 ```R
 library(tidyverse)
