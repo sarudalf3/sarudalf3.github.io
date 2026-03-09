@@ -13,7 +13,7 @@ Las aplicaciones Power BI y Tableau tienen gráficos para esto, como Data Scient
 
 El Desafío: Replicar el gráfico de rendimiento de una planta de concentrado en R
 <div class="image_center mb-4 mt-2">
-    <img src="/assets/images/posts/waterfall_01.png" alt="waterfall_01.jpg" style="max-width: 80%; max-height: 80%;"/> 
+    <img src="/assets/images/posts/waterfall_01.jpg" alt="waterfall_01.jpg" style="max-width: 100%; max-height: 100%;"/> 
 </div>
 
 Figura 1: Gráfico waterfall del Tratamiento Planificado (Feb-25) vs. el Tratamiento Real, con todas las desviaciones intermedias.
@@ -116,7 +116,7 @@ Resultados e interpretación
 Al ejecutar el código, obtenemos el siguiente gráfico.
 
 <div class="image_center mb-4 mt-2">
-    <img src="/assets/images/posts/waterfall_01.png" alt="waterfall_02.jpg" style="max-width: 80%; max-height: 80%;"/> 
+    <img src="/assets/images/posts/waterfall_02.jpg" alt="waterfall_02.jpg" style="max-width: 100%; max-height: 100%;"/> 
 </div>
 
 Principales Hallazgos (Insights):
