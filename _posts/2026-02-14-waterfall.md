@@ -16,7 +16,7 @@ Las aplicaciones Power BI y Tableau tienen gráficos para esto, como Data Scient
     <img src="/assets/images/posts/waterfall_01.jpg" alt="waterfall_01.jpg" style="max-width: 100%; max-height: 100%;"/> 
 </div>
 
-Figura 1: Gráfico waterfall del Tratamiento Planificado (Feb-25) vs. el Tratamiento Real, con todas las desviaciones intermedias.
+Figura 1: Gráfico waterfall del Tratamiento Planificado (Feb-26) vs. el Tratamiento Real, con todas las desviaciones intermedias.
 
 Primero hay que *leer* los datos del gráfico original. En un flujo de trabajo real, estos datos vendrían de una base de datos de producción, en este ejemplo los codificaremos manualmente.
 
@@ -43,12 +43,10 @@ datos_waterfall <- tribble(
 ) %>% mutate(factor = fct_inorder(factor))
 ```
 
-# 2: Transformar datos
+# 2. Transformar datos
 Calcular **Inicio** y **Fin** de cada barra. Esta es la parte clave. Para un gráfico waterfall, cada barra debe comenzar donde termina la anterior. **geom_col** no lo hace automáticamente; necesitamos **geom_rect**, aunque necesita las coordenadas *ymin* y *ymax*.
 
 Utilizaremos la función **accumulate()** de la librería *purrr* (parte de tidyverse) para calcular estos valores de forma limpia.
-
-# 3. Calcular las coordenadas de geom_rect (inicios y finales)
 
 ```R
 waterfall_df <- datos_waterfall %>%
@@ -58,7 +56,7 @@ waterfall_df <- datos_waterfall %>%
   )
 ```
 
-# 4. Ajustar los totales iniciales y finales
+# 3. Ajustar los totales iniciales y finales
 
 ```R
 # En el gráfico original, las barras de 'Total' suben desde cero.
@@ -69,7 +67,7 @@ waterfall_df$inicio[nrow(waterfall_df)] <- 0
 waterfall_df$valor[nrow(waterfall_df)] <- waterfall_df$fin[nrow(waterfall_df)]
 ```
 
-# 5. Generar el gráfico
+# 4. Generar el gráfico
 
 Crear el Gráfico con **ggplot2**, usando **geom_rect**. También personalizaremos los colores para que coincidan (aproximadamente) con la paleta de la imagen original (Verdes para ganancia, Naranjas/Rojos para pérdida, Azules para totales).
 
@@ -111,14 +109,15 @@ ggplot(waterfall_df, aes(xmin = factor, xmax = factor, ymin = inicio, ymax = fin
   )
 ```
 
-Resultados e interpretación
+# Resultados e interpretación
+
 Al ejecutar el código, obtenemos el siguiente gráfico.
 
 <div class="image_center mb-4 mt-2">
     <img src="/assets/images/posts/waterfall_02.jpg" alt="waterfall_02.jpg" style="max-width: 100%; max-height: 100%;"/> 
 </div>
 
-# Principales Hallazgos
+## Principales Hallazgos
 
 *Cumplimiento de Meta*: Se logró un tratamiento real de 1659 kt, superando el plan inicial de 1639 kt en un 1.2%. A pesar de ser un resultado positivo, el análisis revela una alta variabilidad interna.
 
