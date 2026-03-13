@@ -1,7 +1,7 @@
 ---
 layout: external
 title:  Gráficos con ubicación espacial
-categories: ['Spatial', 'Charts', 'DataViz','Maps']
+categories: ['Spatial', 'Maps', 'DataViz','R']
 author: rmirfa
 Date: 2026-03-13
 image: assets/images/projects/spatialChart.jpg 
