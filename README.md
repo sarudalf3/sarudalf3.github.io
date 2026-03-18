@@ -18,6 +18,13 @@ Soy un **Data Analyst / Data Scientist** apasionado por transformar datos crudos
 
 ---
 
+## Tópicos de interés
+* Modelación estadística
+* Visualización de datos
+* Spatial & time data series
+* ML & DL
+* AI techniques
+
 ## 📈 Formación y Certificaciones
 * **Senior Data Analyst Focus:** Especializado en la optimización de procesos mediante el análisis de grandes volúmenes de datos.
 * **Idiomas:** Español (Nativo) | Inglés (Técnico/Profesional).

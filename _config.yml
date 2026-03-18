@@ -1,12 +1,12 @@
 title: "Ruben Miranda - Data blog"
 email: ruben.miranda.f@gmail.com
-timezone: america/santiago
+timezone: America/Santiago
 baseurl: ""
-permalink: "/:title/"
+permalink: "/:slug/"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 author: RMiranda
-paginate: 30
+paginate: 10
 #disqus: 'disqus_5QSs1Dy586'
 locale: es_CL
 lang: es_CL
@@ -25,7 +25,7 @@ sass:
 # Authors
 authors:
   rmirfa:
-    name: Ruben
+    name: Rubén
     display_name: Rubén Miranda
     avatar: 'assets/images/my_avatar.jpg'
     email: ruben.miranda.f@gmail.com
@@ -43,20 +43,31 @@ social:
   linkedin: https://www.linkedin.com/in/rmirandaf
   github: https://github.com/sarudalf3
 
+# Configuración global de slugs
+slugify:
+  mode: latin # Esto elimina tildes y caracteres especiales
+  cased: false # ESTA ES LA CLAVE: 'false' fuerza todo a minúsculas
+
 ### Collections ###
 collections:
+  posts:
+    permalink: /post/:slug/
   projects:
     output: true
-    permalink: /projects/:title/
+    permalink: /:slug/
 
 ### Defaults for collections ###
 defaults:
   - scope:
       path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: ""
       type: "projects"
     values:
-      layout: project
-
+      layout: external
 
 # Plugins
 plugins: 

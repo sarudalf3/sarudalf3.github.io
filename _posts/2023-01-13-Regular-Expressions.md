@@ -4,6 +4,7 @@ title:  "Regular Expressions usando Pandas"
 categories: ['Pandas', 'RegEx','Python']
 author: rmirfa
 image: assets/images/posts/Regex.png
+featured: True
 ---
 
 Un área cada vez más explotada es el análisis de datos es la transformación de registros de texto, que en el estudio de comportamiento social es cada vez más utilizado, dado el desarrollo de técnicas de transformación y modelación (text categorization, text clustering, entity extraction, taxonomies, sentiment analysis, document summarization, and entity-relation modeling,...).

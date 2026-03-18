@@ -4,6 +4,7 @@ title:  "Gráficos Waterfall en R con ggplot2"
 categories: ['Visualización de datos','Waterfall', 'R']
 author: rmirfa
 image: assets/images/posts/waterfall.jpg
+featured: True
 ---
 
 En la industria minera, el **tratamiento** de mineral es una métrica crítica. Para entender por qué no se alcanzó una meta o cómo se superó, se utilizan gráficos **Waterfall**.

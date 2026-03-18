@@ -1,8 +1,7 @@
 ---
 layout: page
 title: Acerca de mí
-permalink: "/about/"
-#image: https://github.com/sarudalf3.png
+permalink: "/about_me/"
 ---
 
 <div class="avatar self" style="text-align: center;">

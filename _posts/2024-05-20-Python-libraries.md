@@ -4,6 +4,7 @@ title:  "4 funciones útiles para programadores en Python"
 categories: ['pip/Anaconda','Python','libraries']
 author: rmirfa
 image: assets/images/posts/py_libraries.png
+featured: True
 
 ---
 
