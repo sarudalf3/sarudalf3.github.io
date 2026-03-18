@@ -26,7 +26,7 @@ footermenu:
 - title: Proyectos
   url: "projects/"
 
-- title: cv
+- title: CV
   url: /assets/cv/Resume_Ruben_Miranda.pdf 
   external: true
 
