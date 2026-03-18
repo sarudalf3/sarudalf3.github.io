@@ -1,4 +1,4 @@
-title: "sarudalf's website"
+title: "Ruben Miranda - Data blog"
 email: ruben.miranda.f@gmail.com
 timezone: america/santiago
 baseurl: ""
@@ -31,7 +31,7 @@ authors:
     email: ruben.miranda.f@gmail.com
     web: https://sarudalf3.github.io/
     twitter: https://twitter.com/sarudalf
-    description: "A curious mind!"
+    description: "Data curious!"
     github: https://github.com/sarudalf3
 
 # Social
