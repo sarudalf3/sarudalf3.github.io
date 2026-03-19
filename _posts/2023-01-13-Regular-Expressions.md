@@ -1,31 +1,32 @@
 ---
 layout: post
-title:  "Regular Expressions usando Pandas"
+title:  "Expresiones Regulares con Pandas: Guía Práctica"
 categories: ['Pandas', 'RegEx','Python']
 author: rmirfa
 image: assets/images/posts/Regex.png
 featured: True
 ---
 
-Un área cada vez más explotada es el análisis de datos es la transformación de registros de texto, que en el estudio de comportamiento social es cada vez más utilizado, dado el desarrollo de técnicas de transformación y modelación (text categorization, text clustering, entity extraction, taxonomies, sentiment analysis, document summarization, and entity-relation modeling,...).
+En el análisis de datos moderno, la transformación de texto es un área fundamental. Con el auge del procesamiento de lenguaje natural (NLP) y el análisis de comportamiento, técnicas como la categorización de texto, la extracción de entidades y el análisis de sentimiento se han vuelto herramientas esenciales para obtener valor de registros no estructurados.
 
-En este artículo vamos a revisar usos de busquedas  y filtro de patrones de texto en pandas Dataframes. Para más detalle del uso de expresiones regulares revisar el cheat sheet de expresiones regulares [RegEx Cheat Sheet ](https://www.dataquest.io/blog/regex-cheatsheet/).
+En este artículo, exploraremos cómo realizar búsquedas, extracciones y filtrados de patrones de texto en **DataFrames de Pandas** utilizando expresiones regulares. Si necesitas refrescar la sintaxis básica, te recomiendo este [RegEx Cheat Sheet](https://www.dataquest.io/blog/regex-cheatsheet/).
 
-1. Librerias a utilizar
+---
+
+### 1. Librerías y Preparación
+
+Para comenzar, necesitaremos `pandas` para la estructura de datos y el módulo nativo `re` de Python para operaciones avanzadas de expresiones regulares.
 
 ```python
 import pandas as pd
 import re
 ```
 
-2. Ingreso de datos
-
-Se ingresan algunas palabras en español, y su significado
+### 2. Creación del Dataset
+Utilizaremos un conjunto de "palabras raras" en idioma español y sus significados para poner a prueba nuestras consultas. Estas palabras nos permitirán demostrar cómo limpiar y extraer información de cadenas de texto complejas.
 
 ```python
-data = [
-["Acendrado","Acendrado es una palabra que puedes usar para describir algo 'puro. Sin mancha ni defecto'."],
-["Ademán","Seguro habrás notado que las personas tenemos ciertos movimientos propios con los que nos expresamos. Este movimiento se llama ademán y la RAE lo define como 'movimiento o actitud del cuerpo o de alguna parte suya con que se manifiesta disposición, intención o sentimiento'."],
+data = [["Acendrado","Acendrado es una palabra que puedes usar para describir algo 'puro. Sin mancha ni defecto'."], ["Ademán","Seguro habrás notado que las personas tenemos ciertos movimientos propios con los que nos expresamos. Este movimiento se llama ademán y la RAE lo define como 'movimiento o actitud del cuerpo o de alguna parte suya con que se manifiesta disposición, intención o sentimiento'."],
 ["Agibílibus","Esta palabra rara es un tanto complicada de pronunciar, pero una vez lo logras la vas a querer utilizar para describir a una que otra persona que conoces. Agibílibus o agilíbus es aquello que tiene una persona, la 'habilidad, ingenio, a veces pícaro, para desenvolverse en la vida'."],
 ["Apapachar","Apapachar es el acto de dar un apapacho a alguien, es decir, de dar una palmadita cariñosa o abrazo, según nos indica la RAE. Sin embargo, apapachar es una palabra extraña y absolutamente hermosa cuando la aprendemos bajo sus raíces del náhuatl, donde la palabra utilizada es papachoa y en su proceso de castellanización se transformó en apapacho y apapachar en el acto de 'acariciar el alma'."],
 ["Arrebol","Existe una palabra extraña para describir el efecto de la luz sobre las nubes. Esta es arrebol y se trata de 'cuando las nubes adquieren un color rojo al ser iluminadas por los rayos del Sol'."],
@@ -58,109 +59,201 @@ data = [
 ["Superfluo","Para algunas una palabra extraña, para otras mucho más común; superfluo es un adjetivo para referirnos a algo no necesario, que está de más."],
 ["Uebos","Podrías pensar que se trata de una pésima ortografía para escribir la palabra huevos, pero lo cierto es que uebos existe y es por esto que hace parte de esta lista de palabras raras. Uebos quiere decir necesidad, cosa necesaria según la RAE, y proviene del latin opus. Cuando te refieres a la expresión manda huevos, la forma correcta de escribirlo sería manda uebos, pues proviene del latín ¡Mandat opus! Que traduce '¡La necesidad obliga!'"],
 ["Vagamundo","Una de las palabras raras aceptadas hace muy pocos años por la RAE que se deriva de la palabra anteriormente usada 'vagabundo'. Vagamundo describe a aquella persona ambulante, que va de un lado a otro por el mundo, errante y sin domicilio fijo."],
-["Vulpino","Vulpino se usa para designar aquello que hace referencia a los zorros. Y, de hecho, la palabra latina Vulpes significa, justamente, zorro."]
-]
+["Vulpino","Vulpino se usa para designar aquello que hace referencia a los zorros. Y, de hecho, la palabra latina Vulpes significa, justamente, zorro."]]
 
 # Create the pandas DataFrame 
 df = pd.DataFrame(data, columns = ["Palabra", "Significado"]) 
 df.sample(5)
-
 ```
 
-| Palabra      | Significado |
-|:-------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sempiterno   | Un adjetivo que la RAE define como algo 'que durará para siempre; que, habiendo tenido principio, no tendrá fin'.|
-| Inefable  | Esta es la palabra que tienes que utilizar cuando necesitas un adjetivo para referirte a algo que es tan increíble 'que no se puede explicar con palabras'. |
-| Melifluo  | Otra palabra hermosa con la que te puedes referir a 'un sonido excesivamente dulce, suave o delicado'. |
-| Celaje    | Cuando el cielo tiene nubes de distintas texturas, formando un horizonte colorido, podemos usar la palabra celaje. | 
-| Ataraxia     | La ataraxia se utiliza para definir la 'imperturbabilidad, serenidad'. |
+&nbsp;
 
-3. Extraer texto de columnas del dataframe. Para este ejemplo se va a usar la expresión regular `r"(\'.*\')"` que extrae el texto que se encuentra entre comillas en la columna Significado
+<table style="font-size: 0.9rem;">
+  <thead>
+    <tr>
+      <th style="width: 100px;">Palabra</th>
+      <th>Significado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Sempiterno </code></td>
+      <td>Un adjetivo que la RAE define como algo 'que durará para siempre; que, habiendo tenido principio, no tendrá fin'</td>
+    </tr>
+    <tr style="border-top: 2px solid #000;">
+      <td><code>Inefable</code></td>
+      <td>Esta es la palabra que tienes que utilizar cuando necesitas un adjetivo para referirte a algo que es tan increíble 'que no se puede explicar con palabras'</td>
+    </tr>
+    <tr style="border-top: 2px solid #000;">
+      <td><code>Melifluo</code></td>
+      <td>Otra palabra hermosa con la que te puedes referir a 'un sonido excesivamente dulce, suave o delicado'</td>
+    </tr>
+    <tr style="border-top: 2px solid #000;">
+      <td><code>Celaje</code></td>
+      <td>Cuando el cielo tiene nubes de distintas texturas, formando un horizonte colorido, podemos usar la palabra celaje</td>
+    </tr>
+    <tr style="border-top: 2px solid #000;">
+      <td><code>Ataraxia</code></td>
+      <td>La ataraxia se utiliza para definir la 'imperturbabilidad, serenidad'</td>
+    </tr>
+  </tbody>
+</table>
+
+### 3. Extracción de Información con RegEx
+Pandas ofrece el método ```.str.extract()```, que permite crear nuevas columnas a partir de coincidencias de patrones específicos.
+
+#### 3.1. Extraer texto de columnas del dataframe. 
+Para este ejemplo se va a usar la expresión regular `r"(\'.*\')"` que extrae el texto que se encuentra entre comillas en la columna Significado
 
 ```Python
 #Extract text between '' on Significado
 df['Meaning'] = df['Significado'].str.extract(r"(\'.*\')", expand=False).str.strip("'")
-df.sample(5)
+df.sample(3)
 ```
 
-| Palabra          | Significado | Meaning  |
-|:-----------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------|
-| Inmarcesible     | Esta es una palabra rara que puedes utilizar cuando estás describiendo algo que no puede marchitarse.  | nan  |
-| Vagamundo        | Una de las palabras raras aceptadas hace muy pocos años por la RAE que se deriva de la palabra anteriormente usada 'vagabundo'. Vagamundo describe a aquella persona ambulante, que va de un lado a otro por el mundo, errante y sin domicilio fijo.  | vagabundo |
-| Befar            | Befar significa burlarse de alguien. Es una palabra onomatopéyica, según los filólogos. | nan |
-| Ademán           | Seguro habrás notado que las personas tenemos ciertos movimientos propios con los que nos expresamos. Este movimiento se llama ademán y la RAE lo define como 'movimiento o actitud del cuerpo o de alguna parte suya con que se manifiesta disposición, intención o sentimiento'. | movimiento o actitud del cuerpo o de alguna parte suya con que se manifiesta disposición, intención o sentimiento |
-| Euroescepticismo | Una nueva palabra que ha surgido debido a la crisis económica y política de los últimos años en europa. La RAE define esta palabra como 'la desconfianza hacia los proyectos políticos de la Unión Europea'.  | la desconfianza hacia los proyectos políticos de la Unión Europea |
+&nbsp;
 
-Otro ejemplo es la extracción de tamaños fijos de texto. En este caso se va a usar la expresión `r'(^\w{5})'` que va a extraer las primeras cinco letras de la columna Palabras.
+<table style="font-size: 0.9rem;">
+  <thead>
+    <tr>
+      <th style="width: 100px;">Palabr</th>
+      <th style="width: 450px;">Significado</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Vagamundo</code></td>
+      <td>Una de las palabras raras aceptadas hace muy pocos años por la RAE que se deriva de la palabra anteriormente usada 'vagabundo'. Vagamundo describe a aquella persona ambulante, que va de un lado a otro por el mundo, errante y sin domicilio fijo</td>
+      <td>vagabundo</td>
+    </tr>
+    <tr style="border-top: 2px solid #000;">
+      <td><code>Befar</code></td>
+      <td>Befar significa burlarse de alguien. Es una palabra onomatopéyica, según los filólogos.</td>
+      <td> nan </td>
+    </tr>
+    <tr style="border-top: 2px solid #000;">
+      <td><code>Melifluo</code></td>
+      <td>Otra palabra hermosa con la que te puedes referir a 'un sonido excesivamente dulce, suave o delicado'</td>
+      <td> un sonido excesivamente dulce, suave o delicado </td>
+    </tr>
+  </tbody>
+</table>
+
+#### 3.2. Extraer prefijos de longitud fija
+Si necesitamos los primeros caracteres de una columna (por ejemplo, para generar códigos o categorías rápidas), podemos usar `r'(^\w{5})'`:
 
 ```python
-df['First words'] = df['Palabra'].str.extract(r'(^\w{5})')
-df[['Palabra','First words']].sample(5)
+df['Prefijo'] = df['Palabra'].str.extract(r'(^\w{5})')
+df[['Palabra','First words']].sample(3)
 ```
 
-| Palabra    | First words   |
-|:-----------|:--------------|
-| Perenne    | Peren         |
-| Agibílibus | Agibí         |
-| Ademán     | Ademá         |
-| Orate      | Orate         |
-| Superfluo  | Super         |
+<table style="font-size: 0.9rem;">
+  <thead>
+    <tr>
+      <th style="width: 100px;">Palabra</th>
+      <th>First words</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Perenne</code></td>
+      <td>Peren</td>
+    </tr>
+    <tr style="border-top: 2px solid #000;">
+      <td><code>Orate</code></td>
+      <td>Orate</td>
+    </tr>
+    <tr style="border-top: 2px solid #000;">
+      <td><code>Superfluo</code></td>
+      <td>Super</td>
+    </tr>
+  </tbody>
+</table>
 
-4. Filtros por texto. Hay una variedad de formas de realizarlo, vamos a revsar las más utilizadas.
+### 4. Técnicas de Filtrado Avanzado
 
--  Función `count`: En este caso cuenta la frecuencia que se encuentra la expresión regular dentro del texto; en caso que no se encuentre el patrón de la expresión, este valor es 0. Se va a utilizar la expresión `r'^S[\w]*o$')`, que identifica los textos que empiezan con `S` y terminan con `o`.
+El filtrado por patrones es donde las expresiones regulares realmente optimizan la limpieza de datos.
+
+#### Función .str.count
+Permite filtrar registros según la frecuencia de un patrón. En este caso, buscamos palabras que comiencen en **S** y terminen en **o** mediante la expresión `r'^S[\w]*o$'`:
 
 ```python
-df[df['Palabra'].str.count(r'^S[\w]*o$')>0][['Palabra','Meaning']]
+# Filtramos palabras que cumplen el patrón exacto
+df_filtrado = df[df['Palabra'].str.count(r'^S[\w]*o$') > 0]
 ```
 
-| Palabra     | Meaning |
-|:------------|:-----------------------------------------------------------------------|
-| Sabrimiento | nan |
-| Sempiterno  | que durará para siempre; que, habiendo tenido principio, no tendrá fin |
-| Sonámbulo   | una persona que camina dormida  |
-| Superfluo   | nan  |
+#### Función .str.match vs .str.contains
+Es importante entender la diferencia:
 
-- Función `match`. Funciona similar a `count`, aunque su salida es Boolean, identificando si encuentró el patrón de la expresión regular en la columna. En este ejemplo se va usar la expresión `r'[\w]+e$'`, y equivale a todas las palabras que terminen con la letra `e`.
+`.match()`: Comprueba si el patrón coincide estrictamente desde el inicio de la cadena.
+
+`.contains()`: Busca el patrón en cualquier posición de la cadena.
+
+#### Ejemplo: Palabras que terminan con la letra 'e'
+```python
+df_termina_e = df[df['Palabra'].str.match(r'[\w]+e$') == True]
+df_termina_e[['Palabra','Significado']].sample(3)
+```
+
+<table style="font-size: 0.9rem;">
+  <thead>
+    <tr>
+      <th style="width: 120px;">Palabra</th>
+      <th>Significado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Inmarcesible</code></td>
+      <td>Esta es una palabra rara que puedes utilizar cuando estás describiendo algo que no puede marchitarse.</td>
+    </tr>
+    <tr style="border-top: 2px solid #000;">
+      <td><code>Orate</code></td>
+      <td>También te enseñamos una nueva palabra para referirse a aquella persona que ha perdido el juicio: orate. La RAE la define como 'persona de poco juicio, moderación y prudencia'.</td>
+    </tr>
+    <tr style="border-top: 2px solid #000;">
+      <td><code>Inefable</code></td>
+      <td>Esta es la palabra que tienes que utilizar cuando necesitas un adjetivo para referirte a algo que es tan increíble 'que no se puede explicar con palabras'.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### 5. Caso Práctico: Búsqueda con Flags
+
+A menudo necesitamos realizar búsquedas que ignoren la distinción entre mayúsculas y minúsculas. Para ello, utilizamos `flags=re.IGNORECASE` dentro de los métodos de Pandas:
+
+#### Buscar palabras que contengan la letra 'v' sin importar si es Mayúscula
 
 ```python
-df[df['Palabra'].str.match(r'[\w]+e$')==True][['Palabra','Meaning']]
+palabras_v = df[df['Palabra'].str.contains(r'v', flags=re.IGNORECASE)]
+palabras_v[['Palabra','Significado']]
 ```
 
-| Palabra      | Meaning                                        |
-|:-------------|:-----------------------------------------------|
-| Celaje       | nan                                            |
-| Inefable     | que no se puede explicar con palabras          |
-| Inmarcesible | nan                                            |
-| Isagoge      | nan                                            |
-| Orate        | persona de poco juicio, moderación y prudencia |
-| Perenne      | continuo, incesante, que no tiene intermisión  |
+<table style="font-size: 0.9rem;">
+  <thead>
+    <tr>
+      <th style="width: 100px;">Palabra</th>
+      <th>Significado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Ochavo</code></td>
+      <td>Significa una octava parte, aunque se suele emplear para indicar que algo tiene poco valor.</td>
+    </tr>
+    <tr style="border-top: 2px solid #000;">
+      <td><code>Vagamundo</code></td>
+      <td>Una de las palabras raras aceptadas hace muy pocos años por la RAE que se deriva de la palabra anteriormente usada 'vagabundo'. Vagamundo describe a aquella persona ambulante, que va de un lado a otro por el mundo, errante y sin domicilio fijo.</td>
+    </tr>
+    <tr style="border-top: 2px solid #000;">
+      <td><code>Vulpino</code></td>
+      <td>Vulpino se usa para designar aquello que hace referencia a los zorros. Y, de hecho, la palabra latina Vulpes significa, justamente, zorro.</td>
+    </tr>
+  </tbody>
+</table>
 
-- Función `findall` (útil en listas). En este caso entrega todas los patrones encontrados de la expresión regular (siendo en la misma palabra), almacenandolos en una lista. En este caso transformamos en lista las palabras, para obtener sólo las que tienen la palabra `v` y equivale a la expresión `r'(\w*v\w*)'`, indifirente si es mayúscula o minúscula `re.IGNORECASE`
+#### Conclusión
+El uso de expresiones regulares en Pandas transforma procesos de limpieza de datos de horas en simples líneas de código. Desde la extracción de subcadenas hasta el filtrado condicional complejo, estas herramientas son indispensables en el flujo de trabajo de cualquier profesional de datos.
 
-```python
-palabras = pd.Series(df['Palabra'])
-palabras = [itm[0] for itm in palabras.str.findall(r'(\w*v\w*)', flags=re.IGNORECASE) if len(itm)>0]
-df[df['Palabra'].isin(palabras)][['Palabra','Significado']]
-```
-
-| Palabra   | Significado   |
-|:----------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Ochavo    | Significa una octava parte, aunque se suele emplear para indicar que algo tiene poco valor. |
-| Vagamundo | Una de las palabras raras aceptadas hace muy pocos años por la RAE que se deriva de la palabra anteriormente usada 'vagabundo'. Vagamundo describe a aquella persona ambulante, que va de un lado a otro por el mundo, errante y sin domicilio fijo. |
-| Vulpino   | Vulpino se usa para designar aquello que hace referencia a los zorros. Y, de hecho, la palabra latina Vulpes significa, justamente, zorro. |
-
-- Función `contains`. Esta función identifica los registros que contienen la expresión regular `r'^I.*e$'`, en este caso la palabra empieza con `I` y termina con `e`. Es una función booleana, donde es True cuando encuentra el patrón.
-
-```python
-df[df['Palabra'].str.contains(r'^I.*e$')==True]
-```
-
-| Palabra      | Significado |
-|:-------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Inefable     | Esta es la palabra que tienes que utilizar cuando necesitas un adjetivo para referirte a algo que es tan increíble 'que no se puede explicar con palabras'. |
-| Inmarcesible | Esta es una palabra rara que puedes utilizar cuando estás describiendo algo que no puede marchitarse.  |
-| Isagoge      | Isagoge es una palabra extraña que podemos utilizar para referirnos a la parte del preámbulo, a la introducción, aunque probablemente nadie más que tú la va a entender. |
-
-
-Para mayor información, revisar [este repositorio github](https://github.com/sarudalf3/regEx).
+Para consultar el código completo y más ejemplos de implementación, puedes revisar [este repo github](https://github.com/sarudalf3/regEx).
