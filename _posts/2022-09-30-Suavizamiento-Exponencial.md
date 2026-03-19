@@ -1,49 +1,77 @@
 ---
 layout: post
-title:  "Suavizamiento exponencial: Tipos y como usarlo en Python"
+title:  "Suavizamiento exponencial: Tipos y cómo usarlo en Python"
 categories: ['time series', 'stats']
 author: rmirfa
 image: assets/images/posts/smoothing.png
 ---
 
-Uno de los objetivos de la estadística es reducir la incertidumbre mediante técnicas de modelación y predicción; estas dependen de la caracteristica del dato a tratar. Gran parte de la estadística clásica supone que los registros capturados se consideran independientes y de igual distribución (iid); pero ¿qué pasa cuando estos supuestos no se cumplen?
+El objetivo fundamental de la estadística es reducir la incertidumbre mediante técnicas de modelación y predicción, las cuales dependen intrínsecamente de la naturaleza de los datos. Mientras que la estadística clásica suele asumir que las observaciones son independientes e idénticamente distribuidas (iid), ¿qué sucede cuando estos supuestos no se cumplen?
 
-Hay una clase de datos que se llaman series de tiempo, y no es más que una medición de interés en distintos momentos en el tiempo; estos deben ser equidistantes entre sí (una secuencia diaria, mensual, etc..), donde se infiere que la observación en el instante $t$ depende de las mediciones anteriores $t-1$, $t-2$,...; siendo una violación del supuesto de independencia entre las observaciones.
+Las **series de tiempo** son secuencias de mediciones de una variable de interés capturadas en intervalos constantes (diarios, mensuales, etc.). En este tipo de datos, la observación en el instante $t$ suele depender de los valores previos ($t-1, t-2, \dots$), lo que representa una violación directa al supuesto de independencia.
 
-## Modelos ingenuos de tiempo
+## Componentes de una Serie de Tiempo
 
-Dentro de este campo de modelación, se consideran *modelos ingenuos* a aquellos que pueden ser expresadas por tres componentes: Tendencia (T), estacionalidad (S) y un residuo (R) llamado error aleatorio.
+En el análisis de series de tiempo, los modelos se descomponen tradicionalmente en tres elementos clave: **Tendencia ($T$)**, **Estacionalidad ($S$)** y un componente aleatorio o **Residuo ($R$)**.
 
-Es posible tener los siguientes casos:
+Dependiendo de cómo interactúan estas componentes, podemos identificar tres estructuras principales:
 
-1. $$X_{t} = T_{t} + S_{t} + R_{t}, \qquad \text{efecto aditivo}$$
-2. $$X_{t} = T_{t} * S_{t} * R_{t}, \qquad \text{efecto multiplicativo}$$
-3. $$X_{t} = T_{t} + S_{t} * R_{t}, \qquad \text{efecto mixto}$$
+1. **Efecto Aditivo:** $$X_{t} = T_{t} + S_{t} + R_{t}$$
+2. **Efecto Multiplicativo:** $$X_{t} = T_{t} \times S_{t} \times R_{t}$$
+3. **Efecto Mixto:** $$X_{t} = T_{t} + S_{t} \times R_{t}$$
 
-Se asume que $R_{t}$ es una componente aleatoria con media $0$ y varianza constante $c$.
+Para estos modelos, se asume que $R_{t}$ es una componente aleatoria (ruido blanco) con media $0$ y varianza constante $\sigma^2$.
 
-Unos de los modelos utilizados es de suavizamiento exponencial.
+## Métodos de Suavizamiento Exponencial
 
-Este tipo de modelos es de procedimientos automáticos de predicción, y son ampliamente usados por su simpleza y aplicabilidad en diversas áreas.
+El suavizamiento exponencial agrupa una serie de procedimientos automáticos de predicción, ampliamente valorados por su simplicidad y eficacia en diversas áreas. A continuación, se describen sus tres variantes principales:
 
-Se describen los suavizamientos exponencial simple, doble y Holt-Winters.
+### 1. Suavizamiento Exponencial Simple (SES)
+Este método es útil cuando la serie es relativamente estable y no presenta una tendencia clara ni estacionalidad. Se asume que el proceso sigue la forma:
+$$X_{t}= \ell_t + \epsilon_t$$
+Donde $\ell_t$ representa el nivel medio que oscila ocasionalmente en el tiempo y $\epsilon_t$ es el error aleatorio.
 
-1. Suavizamieto exponencial simple
+### 2. Suavizamiento Exponencial Doble (Holt)
+Este tipo de serie considera una componente de **tendencia lineal**. La estructura base se define como:
+$$X_{t}= \ell_t + b_t + \epsilon_t$$
+Donde $b_t$ representa la pendiente o tendencia en el instante $t$. Es ideal para datos que muestran un crecimiento o decrecimiento sostenido en el tiempo.
 
-    Este tipo de suavizamiento es útil cuando es relativamente constante, donde se asume que tiene una curva del tipo $X_{t}= \alpha + \epsilon_t,$ donde $\alpha$ es un parámetro de media que oscila ocasionalmente en el tiempo y $\epsilon_t$ un error aleatorio.
+### 3. Suavizamiento de Holt-Winters
+A este nivel de suavizamiento se incorpora una componente cíclica, comúnmente llamada **estacionalidad**. La ecuación toma la forma:
+$$X_{t}= \ell_t + b_t + s_{t-m} + \epsilon_t$$
+Donde $s_{t-m}$ representa el efecto estacional de un periodo $m$ atrás. El caso anterior describe un efecto aditivo (interacción lineal), aunque también existe la versión multiplicativa, expresada como:
+$$X_{t} = (\ell_t + b_t) \times s_{t-m} + \epsilon_t$$
 
-2. Suavizamiento exponencial doble
+## Implementación en Python con Statsmodels
 
-    Este tipo de serie de tiempo considera una componente de tendencia, esto es $X_{t}=\alpha + T_t + \epsilon_t,$ donde $T_t$ es la componente de tendencia y depende del instante $t$. En estos casos se asume una tendencia lineal en la serie de datos.
+Para aplicar estos modelos, la librería más robusta es `statsmodels`. A continuación, se muestra un ejemplo básico de cómo cargar un modelo de **Holt-Winters** (Suavizamiento Exponencial Triple) para realizar predicciones:
 
-3. Suavizamiento de Holt Winters
+```python
+import pandas as pd
+from statsmodels.tsa.holtwinters import ExponentialSmoothing
 
-    A este nivel de suavizamiento es posible incorporar una componente ciclico -comunmente llamado estacional. Aquí la ecuación toma la forma $X_{t}=\alpha + T_t + S_{t-s} + \epsilon_t$, donde $T_t$ es la componente de tendencia que depende del instante $t$, y de un periodo $s$ asumiendo ese instante de periodicidad. El caso anterior se denomina efecto aditivo, donde la interacción entre las componentes se da de manera lineal, aunque existe la versión multiplicativa, y consiste en la expresión $X_{t}=(\alpha * T_t)+ S_{t-s} * \epsilon_t$.
+# Supongamos que 'df' es un DataFrame con un índice de tiempo y una columna 'ventas'
+# 1. Definir el modelo
+# Trend: 'add' (aditivo), Seasonal: 'mul' (multiplicativo),
+# periods: frecuencia estacional
+model = ExponentialSmoothing(df['ventas'], 
+                             trend='add', 
+                             seasonal='mul', 
+                             seasonal_periods=12)
 
-Para información de como implimentar este tipo de modelación en Python revisar el siguiente [github repo](https://github.com/sarudalf3/ExponencialSmoothing).
+# 2. Ajustar el modelo a los datos
+model_fit = model.fit()
 
-References:
+# 3. Realizar una predicción para los próximos 12 meses
+forecast = model_fit.forecast(12)
+
+print(forecast)
+```
+
+En este [repo github](https://github.com/sarudalf3/ExponencialSmoothing) hay un ejemplo de estimación por suavizamiento exponencial.
+
+**Bibliografía**
 
 - [Forecasting: Principles and Practice](https://otexts.com/fpp2/expsmooth.html)
-- [stats model library](https://www.statsmodels.org/dev/examples/notebooks/generated/exponential_smoothing.html)
+- [Statsmodels documentation](https://www.statsmodels.org/dev/examples/notebooks/generated/exponential_smoothing.html)
 - [Apuntes personales](../assets/cv/smoothing.pdf)

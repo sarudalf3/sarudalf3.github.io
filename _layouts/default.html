@@ -18,6 +18,18 @@
 <!--mathjax installed-->
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    }
+  };
+</script>
+
 <!--font-awesome installed
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">-->
 <script src="https://use.fontawesome.com/1771d3377c.js"></script>
@@ -117,7 +129,7 @@ gtag('config', '{{site.ganalytics}}');
     {% endfor %}
     </ul>
     <div class="copyright small">
-      © {{site.title}}, 2022-2026. Todos los derechos reservados.
+      © {{site.title}} - 2022-2026. Todos los derechos reservados.
     </div>
 </footer>
 
