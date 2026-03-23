@@ -6,7 +6,7 @@ permalink: "/:slug/"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 author: RMiranda
-paginate: 10
+paginate: 11
 #disqus: 'disqus_5QSs1Dy586'
 locale: es_CL
 lang: es_CL
