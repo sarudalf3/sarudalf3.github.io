@@ -8,31 +8,17 @@ permalink: "/about_me/"
     <img src="/assets/images/about_me.png"  style="width: 400px;"/>
 </div>
 
-¡Hola! Gracias por llegar hasta aquí.
-Soy Rubén: Estadístico, ambientalista, programador, lector y viajero.
+¡Hola! Soy Rubén, Data Scientist | Estadístico | Estratega de IA.
 
-Con cerca de 10 años de experiencia en el mundo de los datos: desde la recopilación, análisis y modelación, hasta la visualización y la interpretación de información.
-A lo largo de mi carrera he trabajado con diversos lenguajes y plataformas (Python, R, SAS, STATA, SPSS), construyendo modelos predictivos, automatizando procesos, auditando flujos de datos complejos y desarrollando KPIs estratégicos.
+Soy un apasionado de los datos con más de 10 años de trayectoria. Mi enfoque no es solo construir modelos, sino diseñar soluciones que transformen negocios. Actualmente, lidero proyectos de analítica avanzada en el sector minero, donde he logrado reducir los tiempos de entrega en un 30% mediante la automatización de flujos y el uso de arquitecturas escalables.
 
-Mi experiencia laboral diversa ha sido una ventaja competitiva: me ha permitido abordar problemas desde distintos ángulos, proponer soluciones innovadoras y adaptarme con facilidad a diferentes industrias y desafíos.
-Además, ha fortalecido mi habilidad para colaborar con equipos multidisciplinarios, respetando siempre la diversidad de opiniones, culturas y orientaciones.
+Las habilidades:
+- Rigor estadístico y Académico: Magíster en Estadística con la distinción máxima y una sólida base en modelamiento avanzado (ML/DL).
+- Versatilidad de Industrias: Desde la gobernanza crítica del IPC nacional en el INE, pasando por el análisis actuarial en seguros, hasta modelos de Churn y LTV en telecomunicaciones.
+- Liderazgo Técnico: Experto en coordinar equipos multidisciplinarios y gestionar stakeholders para asegurar que la tecnología se traduzca en valor tangible.
+- Stack Tecnológico: Dominio experto de Python, R y SQL (BigQuery/Snowflake), complementado con habilidades de MLOps y despliegue en la nube (GCP).
 
-Soy un convencido del trabajo colaborativo y del poder de las pequeñas acciones para generar grandes cambios. Creo en el respeto por el medio ambiente, promuevo hábitos de reciclaje y busco constantemente reducir mi impacto en la naturaleza.
-
-🎓 En el ámbito académico, soy Magíster en Estadística por la Universidad de Valparaíso y Licenciado en Ciencia Estadística por la Pontificia Universidad Católica de Valparaíso.
-Complementé mi formación con un Diplomado en Ciencia de Datos en la Universidad del Desarrollo, y he cursado diversas especializaciones en Data Science, Machine Learning y Deep Learning.
-
-Durante mi época de estudiante, obtuve una beca de postgrado, participé en proyectos de investigación científica, centros de estudiantes y realicé un intercambio académico en la Universidad Complutense de Madrid. También presenté investigaciones en congresos de modelación estadística en distintos países de Sudamérica.
-
-🌍 Como viajero, he recorrido 15 países y he vivido en Canadá y España.
-Amo las actividades al aire libre: he caminado la Gran Muralla China, buceado en Tailandia, visto auroras boreales en el Ártico, practicado rappel, sandboarding, kayaking y trekking en algunos de los rincones más increíbles del planeta.
-
-Durante la cuarentena por Covid-19, aproveché el tiempo para retomar y potenciar el aprendizaje continuo: perfeccioné mis habilidades en programación Python, visualización con Power BI y Tableau, y profundicé en técnicas de machine learning y deep learning. También cursé un bootcamp de Full-Stack Python Developer que impulsó mi perfil como programador.
-
-Hoy me desempeño desarrollando soluciones innovadoras de analítica avanzada en el sector minero: diseño y difundo dashboards estratégicos, implemento pipelines de datos utilizando Snowflake y SAP (PM/MM), transformo información con R/Python y visualizo resultados a través de Power BI.
-
-Ah, y si te preguntas de dónde viene mi nickname sarudalf... es una mezcla de Saruman y Gandalf.
-Porque, claro, no podía faltar un guiño a mi amor por El Señor de los Anillos.
+Más allá de los datos: Soy un viajero incansable (15+ países), ambientalista y entusiasta de la tecnología. Mi nickname, sarudalf, es un guiño a mi gusto por El Señor de los Anillos y mi curiosidad constante por aprender algo nuevo cada día.
 
 Si quieres saber más sobre mí, te invito a revisar mi CV o a contactarme. 🚀
 
