@@ -8,7 +8,7 @@ permalink: "/about_me/"
     <img src="/assets/images/about_me.png"  style="width: 400px;"/>
 </div>
 
-¡Hola! Soy Rubén, Data Scientist | Estadístico | Estratega de IA.
+¡Hola! Soy Rubén, Data Scientist \| Estadístico \| Estratega de IA.
 
 Soy un apasionado de los datos con más de 10 años de trayectoria. Mi enfoque no es solo construir modelos, sino diseñar soluciones que transformen negocios. Actualmente, lidero proyectos de analítica avanzada en el sector minero, donde he logrado reducir los tiempos de entrega en un 30% mediante la automatización de flujos y el uso de arquitecturas escalables.
 
