@@ -13,10 +13,16 @@ permalink: "/about_me/"
 Soy un apasionado de los datos con más de 10 años de trayectoria. Mi enfoque no es solo construir modelos, sino diseñar soluciones que transformen negocios. Actualmente, lidero proyectos de analítica avanzada en el sector minero, donde he logrado reducir los tiempos de entrega en un 30% mediante la automatización de flujos y el uso de arquitecturas escalables.
 
 Las habilidades:
-- Rigor estadístico y Académico: Magíster en Estadística con la distinción máxima y una sólida base en modelamiento avanzado (ML/DL).
-- Versatilidad de Industrias: Desde la gobernanza crítica del IPC nacional en el INE, pasando por el análisis actuarial en seguros, hasta modelos de Churn y LTV en telecomunicaciones.
-- Liderazgo Técnico: Experto en coordinar equipos multidisciplinarios y gestionar stakeholders para asegurar que la tecnología se traduzca en valor tangible.
-- Stack Tecnológico: Dominio experto de Python, R y SQL (BigQuery/Snowflake), complementado con habilidades de MLOps y despliegue en la nube (GCP).
+- **Rigor estadístico y Académico:** Magíster en Estadística con la distinción máxima y una sólida base en modelamiento avanzado (ML/DL).
+- **Versatilidad de Industrias:** Desde la gobernanza crítica del IPC nacional en el INE, pasando por el análisis actuarial en seguros, hasta modelos de Churn y LTV en telecomunicaciones.
+- **Liderazgo Técnico:** Experto en coordinar equipos multidisciplinarios y gestionar stakeholders para asegurar que la tecnología se traduzca en valor tangible.
+- **Stack Tecnológico:** Dominio experto de Python, R y SQL (BigQuery/Snowflake), complementado con habilidades de MLOps y despliegue en la nube (GCP).
+
+Proyectos Destacados:
+- **Natural Language Processing (NLP):** Implementación de modelos de lenguaje y análisis de texto, explorando desde redes neuronales recurrentes hasta arquitecturas para minería de texto aplicada.
+- **Estadística y Machine Learning:** Repositorio central con implementaciones de algoritmos de aprendizaje supervisado y no supervisado, con un fuerte enfoque en el rigor estadístico y validación de supuestos.
+- **Análisis de Series de Tiempo:** Modelamiento predictivo utilizando suavizamiento exponencial en Python, ideal para proyecciones de demanda y análisis financiero.
+- **Visualización Avanzada:** Uso experto de Power Bi/Tableau, desarrollo de gráficos complejos (R/Python) y dashboards para la interpretación de datos productivos, combinando potencia analítica con diseño visual efectivo.
 
 Más allá de los datos: Soy un viajero incansable (15+ países), ambientalista y entusiasta de la tecnología. Mi nickname, sarudalf, es un guiño a mi gusto por El Señor de los Anillos y mi curiosidad constante por aprender algo nuevo cada día.
 
