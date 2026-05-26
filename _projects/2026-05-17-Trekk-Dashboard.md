@@ -1,6 +1,6 @@
 ---
 layout: external
-title:  Dashboard deportivo / Trekk
+title:  Dashboard deportivo de senderismo
 categories: ['R', 'Spatial Data', 'DataViz', 'Sports', "KPIs"]
 author: rmirfa
 Date: 2026-05-17
