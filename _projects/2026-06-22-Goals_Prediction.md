@@ -1,11 +1,11 @@
 ---
 layout: external
-title:  Dashboard deportivo de senderismo
-categories: ['R', 'Spatial Data', 'DataViz', 'Sports', "KPIs"]
+title:  Predicción goles partidos FIFA WC26
+categories: ['Sports Stats', 'Poisson Regression', 'Goals Prediction', 'FIFA WC26', "Webscrappping"]
 author: rmirfa
-Date: 2026-05-17
-image: assets/images/projects/trekk.png 
-description: Se diseña una visualización de desempeño (velocidad / pendiente) de una ruta de trekking realizado en el sector de valle del Olivares, ubicado en la comuna de San José de Maipo, región Metropolitana - Chile.
+Date: 2026-06-22
+image: assets/images/projects/FIFA_WC26.png 
+description: Se propone un modelo de predicción de goles usando GLM con función de enlace Poisson. Además se webscrapeó los resultados de los partidos previos y se construyeron las variables del modelo.
 external_url: https://github.com/sarudalf3/Dashboard_trail
 featured: True
 ---
